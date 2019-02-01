@@ -1,8 +1,8 @@
-// HIA
+// hia
 import hiaLogo from '../images/logos/hia-wh.png'
 import hiaHomepage from '../images/portfolio/hia/homepage.jpg'
-import hiaTalk from '../images/portfolio/HIA/hiatalk-1-2.jpg'
-import hiaPortal from "../images/portfolio/HIA/portal1.jpg"
+import hiaTalk from '../images/portfolio/hia/hiatalk-1-2.jpg'
+import hiaPortal from "../images/portfolio/hia/portal1.jpg"
 
 // My Local Group
 import mlgLogo from '../images/logos/mlg-words.png'
@@ -31,12 +31,12 @@ const PortfolioData = [
         url: "https://www.hia.ai",
         details: "Responsive re-design & build of the company website. A PWA using WordPress CMS with pre-compiled modular JS, jQuery & sass.",
         tools: "ES6 JS, jQuery, SASS, Gulp, WordPress, Lighthouse auditing",
-        employer: "HIA Technologies",
+        employer: "hia Technologies",
         employerLogo: hiaLogo,
         thumbnail: null,
         images: [
-            ".../images/portfolio/HIA/homepage2.jpg",
-            ".../images/portfolio/HIA/homepage3.jpg"
+            ".../images/portfolio/hia/homepage2.jpg",
+            ".../images/portfolio/hia/homepage3.jpg"
         ],
         hero: hiaHomepage,
         all: true,
@@ -52,15 +52,15 @@ const PortfolioData = [
     {
         id: 2,
         date: "2018",
-        project: "HIA Talk app",
+        project: "hia Talk app",
         url: null,
         details: "App design & development using Unity Game Engine, C#, Adobe Photoshop & Adobe XD for wire-frames.",
         "tools": "ES6 JS, jQuery, SASS, Gulp, WordPress, Lighthouse auditing",
-        employer: "HIA Technologies",
+        employer: "hia Technologies",
         employerLogo: hiaLogo,         
         thumbnail: "",
         images: [
-            "../images/portfolio/HIA/hiatalk-3-4.jpg"
+            "../images/portfolio/hia/hiatalk-3-4.jpg"
         ],
         hero: hiaTalk,
         all: true,
@@ -79,12 +79,12 @@ const PortfolioData = [
         project: "Client Portal",
         url: null,
         details: "Wire-frame & design ( development in progress ). .NET with React, Telerik graphs & charts and REST api.",
-        employer: "HIA Technologies",
+        employer: "hia Technologies",
         employerLogo: hiaLogo,         
         thumbnail: "",
         images: [
-            "../images/portfolio/HIA/portal2.jpg",
-            "../images/portfolio/HIA/portal3.jpg"
+            "../images/portfolio/hia/portal2.jpg",
+            "../images/portfolio/hia/portal3.jpg"
         ],
         hero: hiaPortal,
         all: true,
