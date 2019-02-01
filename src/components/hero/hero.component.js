@@ -1,6 +1,6 @@
 import React from 'react'
 import './hero.scss'
-import Video from '../../video/nyc.mp4'
+// import Video from '../../video/nyc.mp4'
 
 // import PropTypes from 'prop-types';
 

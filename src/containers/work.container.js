@@ -3,14 +3,13 @@ import React, { Component } from 'react';
 import Work from '../components/work/work.component';
 
 //* Data for <Work /> components
-import Data from '../data/work.json';
-const workData = Data.work;
+import WorkData from '../data/work.js';
 
 class WorkContainer extends Component {
     render() {
         // console.log('projectsData', projectsData);
         return (
-            <Work data={ workData } />
+            <Work data={ WorkData } />
         );
     }
 }
