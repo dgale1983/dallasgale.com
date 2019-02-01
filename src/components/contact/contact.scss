@@ -4,6 +4,8 @@
 .contact {
   &__wrapper {
     background-color: $theme-default-night;
+    padding-bottom: 0;
+    padding-top: 0;
   }
   &__content {
     display: table;

@@ -8,12 +8,13 @@ const Hero = props => {
   return (
     <section className="hero">
       <div className="hero__media">
-        <div className="hero__video-container">
+        {/* <div className="hero__video-container">
           <video loop autoPlay className="hero__video">
             <source src={Video} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-        </div>
+        </div> */}
+        <div className="hero__photo"></div>
       </div>
 
       <div className="content  hero__intro">

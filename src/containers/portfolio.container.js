@@ -5,10 +5,10 @@ import '../components/portfolio/portfolio.scss'
 import '../components/portfolio/filter/filter.scss'
 
 //* Data for <Portfolio /> component
-import Data from '../data/portfolio.json'
-const portfolios = Data.portfolio
-
-console.log('portfolios', portfolios)
+// import Data from '../data/portfolio.json'
+import PortfolioData from '../data/portfolio';
+// const portfolios = Data.portfolio
+console.log('PortfolioData', PortfolioData)
 
 // * Folio Filters
 const PORTFOLIO_FILTERS = {
@@ -28,7 +28,7 @@ class PortfolioContainer extends Component {
     super(props)
 
     this.state = {
-      list: portfolios,
+      list: PortfolioData,
       filterKey: 'BY_ALL',
     }
   }

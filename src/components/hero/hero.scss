@@ -13,7 +13,7 @@
     background: $theme-default-night url('../../images/hero-photo2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: right bottom;
+    background-position: center bottom;
     width: 50%;
     display: block;
     overflow: hidden;
@@ -65,7 +65,7 @@
 
   &__media {
     display: table-cell;
-    width: 20%;
+    width: 40%;
     position: fixed;
     z-index: 0;
 
