@@ -1,0 +1,27 @@
+@import '../../styles/theme.scss';
+@import '../../styles/breakpoints.scss';
+
+.work {
+  color: $theme-default-mist;
+  &__wrapper {
+    background-color: $theme-default-night;
+
+    @include respond-to(tablet-down) {
+      margin-left: auto;
+    }
+  }
+
+  &__content {
+    display: grid;
+    column-gap: 5em;
+    grid-template-columns: repeat(auto-fill, minmax(22em, 1fr));
+
+    @include respond-to(tablet-down) {
+      grid-template-columns: repeat(auto-fill, minmax(14em, 1fr));
+    }
+    
+    @include respond-to(phone-down) {
+      display: block;
+  }
+  }
+}

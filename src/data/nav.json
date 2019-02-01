@@ -1,0 +1,34 @@
+{
+    "navigation": [
+        {
+            "id": 1,
+            "label": "Portfolio",
+            "anchor": "portfolio",
+            "alt": ""
+        },
+        {
+            "id": 2,
+            "label": "Work",
+            "anchor": "work",
+            "alt": ""
+        },
+        {
+            "id": 3,
+            "label": "Education & Training",
+            "anchor": "training",
+            "alt": ""
+        },
+        {
+            "id": 4,
+            "label": "Skills & Tools",
+            "anchor": "skills",
+            "alt": ""
+        },
+        {
+            "id": 5,
+            "label": "Contact Me",
+            "anchor": "contact",
+            "alt": ""
+        }
+    ]
+}

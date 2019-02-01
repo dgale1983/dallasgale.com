@@ -1,0 +1,87 @@
+@import '../../../styles/theme.scss';
+@import '../../../styles/breakpoints.scss';
+
+.filter {
+    background: rgba(0,0,0,0.8);
+    position: sticky;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 0em;
+    margin: 0 auto;
+    text-align: center;
+    top: 0em;
+    height: auto;
+    width: 100%;
+    z-index: 1;
+
+    @include respond-to(tablet-down) {
+        visibility: hidden;
+        display: none;
+    }
+
+    &__title {
+        // background: $theme-default-splash;
+        font-size: 0.5em;
+        margin-left: -1em;
+        padding: 0.3em 1em;
+    }
+
+    &__button {
+        background: none;
+        border: none;
+        color: $theme-default-splash;
+        font-size: 0.7em;
+        font-weight: bold;
+        padding-bottom: 0.5em;
+        text-transform: lowercase;
+        text-align: left;
+        width: 100%; 
+    }
+
+    &__list {
+        display: block;
+        height: auto;
+        list-style: none;
+        margin-left: 0;
+        margin-bottom: 0;
+        width: 100%;
+        vertical-align: middle;
+    }
+
+    &__item {
+        margin-right: 1em;
+        display: inline-block;
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    &__button {
+        background: none;
+        border: none;
+        border-bottom: 3px solid $theme-default-splash;
+        color: $theme-default-light;
+        font-size: 0.6em;
+        font-weight: normal;
+        height: 100%;
+        padding-left: 0;
+        text-transform: lowercase;
+        text-align: left;
+        width: auto; 
+        cursor: pointer;
+        &:hover {
+            border-bottom-color:transparent;
+            color: $theme-default-light;
+            transition: all 0.2s;
+        }
+    }
+
+}
+
+input.filter__toggle-input {
+    border-radius: 0;
+    background: black;
+}
+
+

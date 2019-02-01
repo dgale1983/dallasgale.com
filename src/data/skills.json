@@ -1,0 +1,217 @@
+{
+    "skills": [
+        {
+            "category": [
+                {
+                    "name": "Basics",
+                    "items": [
+                        {
+                            "item": "Experienced with Semantic HTML5"
+                        },
+                        {
+                            "item": "Awareness of web accessibility ( WCAG )"
+                        },
+                        {
+                            "item": "Responsive design & development"
+                        }
+                    ]
+                    
+                },
+                {
+                    "name": "Build Tools",
+                    "items": [
+                        {
+                            "item": "Experience with automating tasks and compiling using Gulp, Grunt & Webpack "
+                        }
+                    ]
+                    
+                },
+                {
+                    "name": "CSS",
+                    "items": [
+                        {
+                            "item": "Experimented using Aphrodite & Emotion ( CSS in JS ) & CSS Modules"
+                        },
+                        {
+                            "item": "Experienced using SASS"
+                        },
+                        {
+                            "item": "Experience implementing itcss and bem work flow"
+                        },
+                        {
+                            "item": "Experimented with CSS Grid & css animations"
+                        }
+                    ]
+                    
+                },
+                {
+                    "name": "CLIs & Package Managers",
+                    "items": [
+                        {
+                            "item": "Create React App"
+                        },
+                        {
+                            "item": "Gatsby"
+                        },
+                        {
+                            "item": "NPM"
+                        },
+                        {
+                            "item": "Yarn"
+                        }
+                    ]
+                    
+                },
+                {
+                    "name": "Data Fetching",
+                    "items": [
+                        {
+                            "item": "Experimented with GraphQL ( Gatsby with Contentful )"
+                        },
+                        {
+                            "item": "REST + JSON payload experience"
+                        }
+                    ]
+                    
+                },
+                {
+                    "name": "Design",
+                    "items": [
+                        {
+                            "item": "10+ years Adobe Suite experience ( Photoshop, Illustrator, InDesign, Premier Pro & XD )"
+                        },
+                        {
+                            "item": "Web & Graphic design experience"
+                        },
+                        {
+                            "item": "Vector Illustration experience"
+                        },
+                        {
+                            "item": "Bespoke Typography creation"
+                        },
+                        {
+                            "item": "Style-guide + wire frames "
+                        },
+                        {
+                            "item": "Branding experience"
+                        }
+                    ]
+                    
+                },
+                {
+                    "name": "Framework & Libraries",
+                    "items": [
+                        {
+                            "item": "React preferred"
+                        },
+                        {
+                            "item": "Experimented with Redux"
+                        },
+                        {
+                            "item": "Umbraco CMS"
+                        },
+                        {
+                            "item": "Previous work experience using Angular and Vue2"
+                        },
+                        {
+                            "item": "Proficient with JQuery"
+                        },
+                        {
+                            "item": "Unity 2D experience ( C# )"
+                        },
+                        {
+                            "item": "Static site generation using Gatsby & Next ( React )"
+                        },
+                        {
+                            "item": "Implemented Material Design, Bootstrap & Semantic UI component libraries"
+                        },
+                        {
+                            "item": "Adobe Typekit integration"
+                        },
+                        {
+                            "item": "Google Fonts integration"
+                        }
+                    ]
+                    
+                },
+                {
+                    "name": "IDE's",
+                    "items": [
+                        {
+                            "item": "Visual Studio & VS Code ( preferred )"
+                        },
+                        {
+                            "item": "Experience using Webstorm & Sublime Text"
+                        }
+                    ]
+                    
+                },
+                {
+                    "name": "Languages",
+                    "items": [
+                        {
+                            "item": "C# with Umbraco CMS + Unity "
+                        },
+                        {
+                            "item": "CSS"
+                        },
+                        {
+                            "item": "HTML"
+                        },
+                        {
+                            "item": "JavaScript"
+                        },
+                        {
+                            "item": "Experimented with TypeScript"
+                        }
+                    ]
+                    
+                },
+                {
+                    "name": "Templating",
+                    "items": [
+                        {
+                            "item": "Handlebars.JS experience ( Vue2 )"
+                        },
+                        {
+                            "item": "Razor C# experience ( Umbraco )"
+                        }
+                    ]
+                    
+                },
+                {
+                    "name": "Testing",
+                    "items": [
+                        {
+                            "item": "Experimental Unit Testing with Jest / Enzyme"
+                        }
+                    ]
+                    
+                },
+                {
+                    "name": "Workflow",
+                    "items": [
+                        {
+                            "item": "GIT"
+                        },
+                        {
+                            "item": "JIRA project management"
+                        },
+                        {
+                            "item": "Confluence documentation"
+                        },
+                        {
+                            "item": "Work sprints"
+                        },
+                        {
+                            "item": "Agile team environments"
+                        }
+                    ]
+                    
+                }
+            ]
+        
+        }
+    ]
+}
+            

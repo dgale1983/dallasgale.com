@@ -1,0 +1,56 @@
+@import '../../../styles/breakpoints.scss';
+
+.work {
+  &__item {
+    &-content {
+      padding-top: 5em;
+      padding-left: 0em;
+      width: 80%;
+      @include respond-to(tablet-down) {
+        width: 100%;
+      }
+
+      &-info {
+        display: grid;
+        column-gap: 5em;
+        grid-template-columns: repeat(auto-fill, minmax(6em, 1fr));
+        width: 100%;
+
+        @include respond-to(phone-down) {
+          grid-template-columns: repeat(auto-fill, minmax(6em, 2fr));
+        }
+      }
+
+      &-details {
+        display: table-row;
+        width: 100%;
+      }
+
+      &-logo {
+        display: block;
+        width: 100%;
+        max-width: 220px;
+        @include respond-to(tablet-down) {
+            max-width: 100px;
+          }
+    
+
+        img {
+          max-height: 50px;
+        }
+      }
+    }
+
+    &-projects {
+      display: block;
+    }
+
+    &-ul {
+      margin-left: 0;
+    }
+
+    &-li {
+      padding-right: 2em;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+@import '../../styles/theme.scss';
+@import '../../styles/breakpoints.scss';
+
+.logo {
+  animation: logoAnimation 4s infinite;
+  color: $theme-default-splash;
+  font-size: 2.5em;
+  font-weight: bold;
+  position: fixed;
+  right: 1em;
+  top: 1em;
+  z-index: 14;
+
+  @include respond-to(tablet-down) {
+    display: block;
+    height: 50px;
+    left: 0em;
+    margin-top: -1em;
+    // position: absolute;
+    width: 50px;
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 50px;
+  }
+}
+
+@keyframes logoAnimation {
+  0% {
+    opacity: 1;
+    // top: -2em;
+    transform: scale(1);
+  }
+  30% {
+    // opacity: 0.7;
+    transform: scale(0.97);
+  }
+  40% {
+    // opacity: 0.7;
+    transform: scale(1);
+  }
+
+  45% {
+    transform: rotate(10deg);
+  }
+
+  50% {
+    transform: rotate(6deg);
+  }
+  60% {
+    transform: rotate(15deg);
+  }
+  75% {
+    transform: rotate(6deg);
+  }
+
+  80% {
+    transform: rotate(355deg);
+  }
+
+  98% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+    opacity: 1px;
+    top: 1em;
+    transform: scale(1);
+  }
+}

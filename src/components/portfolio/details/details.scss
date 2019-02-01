@@ -1,0 +1,21 @@
+@import '../../../styles/breakpoints.scss';
+
+.details {
+  &__toplevel {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    @include respond-to(phone-down) {
+      display: block;
+    }
+  }
+  &__employer {
+    width: auto;
+    padding-right: 10px;
+    max-width: 150px;
+
+    img {
+      max-height: 20px;
+      width: auto;
+    }
+  }
+}

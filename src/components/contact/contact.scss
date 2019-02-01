@@ -1,0 +1,78 @@
+@import '../../styles/theme.scss';
+@import '../../styles/breakpoints.scss';
+
+.contact {
+  &__wrapper {
+    background-color: $theme-default-night;
+  }
+  &__content {
+    display: table;
+    height: 100vh;
+    text-align: center;
+    margin: 0 auto;
+    vertical-align: middle;
+
+    &-details {
+      display: table-cell;
+      padding-left: 30%;
+      padding-right: 30%;
+      vertical-align: middle;
+      @include respond-to(tablet-down) {
+        padding-right: 2em;
+        padding-left: 2em;
+      }
+
+      @include respond-to(phone-down) {
+        padding-right: 0;
+        padding-left: 0;
+
+        h3 {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+
+  &__list {
+    list-style: none;
+    margin-left: 0;
+    padding-top: 2em;
+
+    img {
+      width: 100%;
+      max-width: 60px;
+    }
+    &-items {
+      display: block;
+
+      &--connect {
+        padding: 10px;
+        display: inline-block;
+
+        a {
+          top: 0;
+          position: relative;
+          &:hover {
+            transition: all 0.1s;
+            top: 1px;
+            position: relative;
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+
+  .sectionTitle {
+    display: block;
+    float: none;
+    font-size: 3em;
+    margin-right: 0;
+    margin-top: 0;
+
+    @include respond-to(phone-down) {
+      font-size: 2em;
+      top: 1.4em;
+    }
+  }
+}

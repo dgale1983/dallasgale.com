@@ -1,0 +1,14 @@
+.theme {
+    &__default {
+        &--splash {
+            color: #46B57A;
+        }
+    }
+}
+
+// Variables
+$theme-default-splash: #46B57A;
+$theme-default-night: #151414;
+$theme-default-overcast: #707070;
+$theme-default-mist: rgb(190, 190, 190);
+$theme-default-light: #ffffff;
