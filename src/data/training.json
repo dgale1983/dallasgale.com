@@ -6,7 +6,7 @@
             "what": "Diploma of Graphic Design",
             "where": "Melbourne, Australia",
             "when": "June 2009 - June 2011",
-            "logo": "./images/logos/swinburne.jpg"
+            "logo": "../images/logos/swinburne.jpg"
         },
         {
             "id": 2,
@@ -14,7 +14,7 @@
             "what": "Certified Umbraco Professional",
             "where": "KØBEN Digital ( Melbourne, Australia )",
             "when": "May 2016",
-            "logo": "./images/logos/koban.png"
+            "logo": "../images/logos/koban.png"
         }
     ]
 }

@@ -2,9 +2,6 @@
     "hero": [
         {
             "tagline": "I’m Dallas Gale, a frontend web developer & designer based in NYC who loves JS + React, modern design and collaborating on creative projects. "
-        },
-        {
-            "img": "../image.jpeg"
         }
     ]
 }

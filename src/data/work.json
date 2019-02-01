@@ -35,7 +35,7 @@
                      "url": false
                  }
             ],
-            "logo": "./images/logos/hia-wh.png"
+            "logo": "../images/logos/hia-wh.png"
         },
         {
             "id": 2,
@@ -52,7 +52,7 @@
                     "url": "holden.com.au" 
                 }
             ],
-            "logo": "./images/logos/isobar-wh.png"
+            "logo": "../images/logos/isobar-wh.png"
         },
         {
             "id": 3,
@@ -89,7 +89,7 @@
                 "url": "footyhomeloans.com.au"
                 }
             ],
-            "logo": "./images/logos/mlg-words.png"
+            "logo": "../images/logos/mlg-words.png"
         },
         {
             "id": 4,
@@ -161,7 +161,7 @@
                 "url": "footyhomeloans.com.au"
                 }
             ],
-            "logo": "./images/logos/gee-wh.png"
+            "logo": "../images/logos/gee-wh.png"
         }
     ]
 }

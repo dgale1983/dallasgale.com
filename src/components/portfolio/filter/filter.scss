@@ -2,7 +2,7 @@
 @import '../../../styles/breakpoints.scss';
 
 .filter {
-    background: rgba(0,0,0,0.8);
+    background: rgba(21,20,20,0.8);
     position: sticky;
     display: inline-block;
     padding: 10px;
@@ -19,6 +19,26 @@
         display: none;
     }
 
+    &__button {
+        background: none;
+        border: none;
+        border-bottom: 1px solid $theme-default-splash;
+        color: $theme-default-light;
+        font-size: 0.7em;
+        font-weight: bold;
+        height: 100%;
+        padding-left: 0;
+        padding-bottom: 0.5em;
+        text-transform: lowercase;
+        text-align: left;
+        width: auto; 
+        cursor: pointer;
+        &:hover {
+            color: $theme-default-splash;
+            transition: all 0.2s;
+        }
+    }
+
     &__title {
         // background: $theme-default-splash;
         font-size: 0.5em;
@@ -26,17 +46,6 @@
         padding: 0.3em 1em;
     }
 
-    &__button {
-        background: none;
-        border: none;
-        color: $theme-default-splash;
-        font-size: 0.7em;
-        font-weight: bold;
-        padding-bottom: 0.5em;
-        text-transform: lowercase;
-        text-align: left;
-        width: 100%; 
-    }
 
     &__list {
         display: block;
@@ -57,25 +66,6 @@
         }
     }
 
-    &__button {
-        background: none;
-        border: none;
-        border-bottom: 3px solid $theme-default-splash;
-        color: $theme-default-light;
-        font-size: 0.6em;
-        font-weight: normal;
-        height: 100%;
-        padding-left: 0;
-        text-transform: lowercase;
-        text-align: left;
-        width: auto; 
-        cursor: pointer;
-        &:hover {
-            border-bottom-color:transparent;
-            color: $theme-default-light;
-            transition: all 0.2s;
-        }
-    }
 
 }
 
