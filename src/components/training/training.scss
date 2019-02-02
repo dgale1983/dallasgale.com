@@ -38,6 +38,8 @@
 
     @include respond-to(tablet-down) {
       width: 100%;
+      display: block;
+
     }
 
     &-education {
