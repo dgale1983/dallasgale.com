@@ -4,10 +4,11 @@
 .work {
   color: $theme-default-mist;
   &__wrapper {
-    background-color: $theme-default-night;
+    // background-color: $theme-default-night;
 
     @include respond-to(tablet-down) {
       margin-left: auto;
+      padding: 0 1em;
     }
   }
 

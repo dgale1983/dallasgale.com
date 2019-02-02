@@ -530,23 +530,17 @@ pre tt:after {
 
 
 .content {
-  padding: 5em 9em 9em;
+  padding: 5em 0 9em;
 
 
   @include respond-to(tablet-down) {
-    padding: 3em 3em 0em 3em;
+    padding: 3em 0em 0em 0em;
   }  
-
-
-  @include respond-to(phone-down) {
-    padding-left: 1em;
-  }
 
   &-start {
     background: $theme-default-light;
     position: relative;
     top: 100vh;
-    z-index:1;
   }
 
   &__container {
@@ -558,8 +552,13 @@ pre tt:after {
 
 .section {
   height: auto;
-  margin: 0;
-  z-index: 11;
+  margin-left: 25%;
+  width: 60%;
   position: relative;
+   @include respond-to(tablet-down) {
+    
+  margin-left: 0;
+  width: 100%;
+  }
 }
 

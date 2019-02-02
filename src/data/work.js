@@ -1,3 +1,15 @@
+// hia
+import hiaLogo from '../images/logos/hia-wh.png'
+
+// Isobar
+import isobarLogo from '../images/logos/isobar.png'
+
+// My Local Group
+import mlgLogo from '../images/logos/mlg-words.png'
+
+// Gee Digital
+import geeLogo from '../images/logos/gee-wh.png'
+
 const WorkData = [
   {
     id: 1,
@@ -35,7 +47,7 @@ const WorkData = [
         url: false,
       },
     ],
-    logo: '../images/logos/hia-wh.png',
+    logo: hiaLogo,
   },
   {
     id: 2,
@@ -53,7 +65,7 @@ const WorkData = [
         url: 'holden.com.au',
       },
     ],
-    logo: '../images/logos/isobar-wh.png',
+    logo: isobarLogo,
   },
   {
     id: 3,
@@ -91,7 +103,7 @@ const WorkData = [
         url: 'footyhomeloans.com.au',
       },
     ],
-    logo: '../images/logos/mlg-words.png',
+    logo: mlgLogo,
   },
   {
     id: 4,
@@ -164,7 +176,7 @@ const WorkData = [
         url: 'footyhomeloans.com.au',
       },
     ],
-    logo: '../images/logos/gee-wh.png',
+    logo: geeLogo,
   },
 ]
 

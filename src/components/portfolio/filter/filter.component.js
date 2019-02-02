@@ -1,5 +1,5 @@
 import React from 'react'
-import Checkbox from './checkbox/checkbox.component'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 import './filter.scss'
 
 const Filter = props => {
@@ -8,14 +8,53 @@ const Filter = props => {
   return (
     <div className="filter">
       <ul className="filter__list">
-        {filterData.map(f => (
-          <li className="filter__list-item">
-            <Checkbox label={f.name} checkedValue={checkedValue} />
+        {filters.map(filter => (
+          <li className="filter__item">
+            <AnchorLink
+              className="filter__button"
+              href={`#portfolio`}
+              onClick={`${filter.key}` })}
+            >
+              `${filter.label}`
+            </AnchorLink>
           </li>
-        ))}
-      </ul>
+          ))
+          }
+        </ul>
     </div>
   )
 }
 
 export default Filter
+
+
+let filters = [
+  {
+    label: "ALL",
+    key: "BY_ALL",
+  },
+  {
+    label: "ANGULAR",
+    key: "BY_ANGULAR",
+  },
+  {
+    label: "APP DEVELOPMENT",
+    key: "BY_APP_DEVELOPMENT",
+  },
+  {
+    label: "UI DESIGN",
+    key: "BY_UI_DESIGN",
+  },
+  {
+    label: "UI DEVELOPMENT",
+    key: "BY_UI_DEVELOPMENT",
+  },
+  {
+    label: "REACT",
+    key: "BY_REACT",
+  },
+  {
+    label: "CMS",
+    key: "BY_CMS",
+  },
+]

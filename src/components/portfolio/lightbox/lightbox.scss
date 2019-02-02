@@ -1,55 +1,36 @@
-// @import '../../../styles/theme.scss';
+@import '../../../styles/theme.scss';
 
-// .lightbox {
-//   &__button {
-//     &--close {
-//       border: 0;
-//       border-bottom: 3px solid $theme-default-splash;
-//       background-color: transparent;
-//       font-weight: bold;
-//       padding-left: 0;
-//       padding-right: 0;
-//       position: absolute;
-//       left: 2em;
-//       top: 2em;
-//     }
-//   }
+.lightbox {
+  &__button {
+    &--close {
+      border: 0;
+      border-bottom: 3px solid $theme-default-splash;
+      background-color: transparent;
+      font-weight: bold;
+      padding-left: 0;
+      padding-right: 0;
+      position: absolute;
+      left: 2em;
+      top: 2em;
+    }
+  }
 
-//   &__wrapper {
-//     display: block;
-//     position: fixed;
-//     height: 100vh;
-//     width: 100%;
-//     background: rgba(0, 0, 0, 0.9);
-//     padding: 20px;
-//     top: 0;
-//     bottom: 0;
-//     left: 0;
-//     right: 0;
-//     z-index: 20;
-//   }
+  &__wrapper {
+    display: block;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+  }
 
-//   &__image {
-//     height: 100%;
-//     width: 100%;
-//   }
-// }
-
-
-// Semantic UI o/r
-.ui.modal >.content { 
-  background: none;
-  height: 100%;
-  width: 100%;
-
-}
-.ui.modal {
-  background: none;
-  box-shadow: none;
-  width: 80%;
-  height: 100vh
-}
-
-.visible.transition {
-  // background: none;
+  &__image {
+    height: 100%;
+    width: 100%;
+  }
 }

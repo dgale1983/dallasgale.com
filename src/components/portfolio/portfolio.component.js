@@ -1,11 +1,10 @@
 import React from 'react'
 import Item from './item/item.component'
-// import PortfolioItem from '../../containers/portfolioItem.container'
 import SectionTitle from '../typography/sectionTitle.component'
 import './portfolio.scss'
 
 const Portfolio = props => {
-  const { children, data, isOpen, lightboxClose, openLightbox } = props
+  const { children, data } = props
 
   return (
     <>
@@ -16,14 +15,9 @@ const Portfolio = props => {
           {data.map(category => {
             return (
               <div key={category.id} className="portfolio__item">
-                {/* {children} */}
-                {/* <PortfolioItem key={category.id} data={category} /> */}
                 <Item
                   key={category.id}
                   data={category}
-                  isOpen={isOpen}
-                  openLightbox={openLightbox}
-                  lightboxClose={lightboxClose}
                 />
               </div>
             )

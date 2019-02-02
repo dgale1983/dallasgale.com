@@ -4,7 +4,7 @@
 .nav {
   display: block;
   position: relative;
-  z-index: 10;
+  // z-index: 10;
 
   &__widget {
     animation: slideInNav;
@@ -15,17 +15,16 @@
     display: table;
     height: 100vh;
     position: fixed;
-    z-index: 12;
+    // z-index: 12;
     @include respond-to(tablet-down) {
       display: none;
+      animation-duration: 0.3s;
     }
 
     .nav__button {
       border-bottom-color: $theme-default-light;
-
       @include respond-to(tablet-down) {
-
-        border-bottom-color: $theme-default-overcast;
+        font-size: 1.5em;
       }
     }
   }
@@ -37,17 +36,17 @@
     font-size: 0.6em;
     font-weight: bold;
     height: 20px;
-    width: 30px;
+    width: 20px;
     display: none;
+    outline: none;
     position: fixed;
-    right: 1em;
-    top: 1em;
+    right: 2em;
+    top: 2em;
     text-align: center;
     visibility: hidden;
-    z-index: 13;
+    // z-index: 13;
     &:focus {
-      border: 1px solid #fff;
-      box-shadow: 0 0 10px #fff;
+      outline: none;
     }
     @include respond-to(tablet-down) {
       display: block;
@@ -76,28 +75,6 @@
           bottom: 0;
       }
     }
-
-    &.open {
-        background: transparent;
-
-        .nav__hamburger-bars--top {
-            transform: rotate(45deg);
-            top: 9px;
-            width: 25px;
-            left: 2px;
-            transition: all 0.1s;
-        }
-        .nav__hamburger-bars--middle {
-            display: none;
-        }
-        .nav__hamburger-bars--bottom {
-            transform: rotate(-45deg);
-            top: 9px;
-            width: 25px;
-            left: 2px;
-            transition: all 0.1s;
-        }
-      }
   }
 
   &__list {
@@ -112,6 +89,9 @@
     }
     &--item {
       margin-bottom: 2em;
+      @include respond-to(tablet-down) {
+        margin-bottom: 3.5em;
+      }
     }
   }
 
@@ -126,14 +106,10 @@
     padding-right: 0;
     padding-bottom: 1em;
     text-decoration: none;
-
-    @include respond-to(tablet-down) {
-      border-bottom-color: $theme-default-overcast;
-    }
   }
 
   &.open {
-    background: white;
+    background: #191919f2;
     display: table;
     position: fixed;
     height: 100vh;
@@ -141,6 +117,23 @@
     visibility: visible;
     right: 0;
     left: 0;
+    .nav__hamburger-bars--top {
+        transform: rotate(45deg);
+        top: 9px;
+        width: 20px;
+        left: 0px;
+        transition: all 0.1s;
+    }
+    .nav__hamburger-bars--middle {
+        display: none;
+    }
+    .nav__hamburger-bars--bottom {
+        transform: rotate(-45deg);
+        top: 9px;
+        width: 20px;
+        left: 0px;
+        transition: all 0.1s;
+    }
   }
 }
 

@@ -1,11 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Modal from 'react-modal';
 
 const Thumbnail = (props) => {
+
+    const {children, onClick, isOpen, onAfterOpen, onRequestClose, contentLabel} = props;
+
     return (
-        // <div className="portfolio__thumbnail">
-            <img className="portfolio__item-thumbnail-img" src={ props.thumbnail } alt={ props.heroAlt } />
-        // </div>
+        <>
+        <img className="portfolio__item-thumbnail-img" src={ props.thumbnail } alt={ props.heroAlt } />
+        </>
     );
 };
 

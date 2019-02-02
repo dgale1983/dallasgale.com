@@ -2,14 +2,14 @@
 @import '../../styles/breakpoints.scss';
 
 .logo {
-  animation: logoAnimation 4s infinite;
+  // animation: logoAnimation 4s infinite;
   color: $theme-default-splash;
   font-size: 2.5em;
   font-weight: bold;
   position: fixed;
   right: 1em;
   top: 1em;
-  z-index: 14;
+  // z-index: 14;
 
   @include respond-to(tablet-down) {
     display: block;

@@ -1,11 +1,16 @@
 @import '../../styles/theme.scss';
+@import '../../styles//breakpoints.scss';
 
 .skills {
-    background-color: $theme-default-night;
+    // background-color: $theme-default-night;
     color: $theme-default-light;
 
     &__wrapper {
         padding-top: 2em;
+
+    @include respond-to(tablet-down) {
+        padding: 0 1em;
+      }
     }
 
     &__content {
