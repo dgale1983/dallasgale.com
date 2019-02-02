@@ -2,7 +2,6 @@
 @import '../../styles/breakpoints.scss';
 
 .training {
-  // background: $theme-default-night;
   color: $theme-default-light;
 
   &__wrapper {
@@ -16,7 +15,8 @@
   &__table {
     display: table;
     height: 100vh;
-    width: 100%;
+    margin: 0 auto;
+    width: 80%;
     @include respond-to(tablet-down) {
       padding-top: 5em;
     }
@@ -34,7 +34,7 @@
     position: relative;
     display: grid;
     column-gap: 2em;
-    grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(32em, 1fr));
 
     @include respond-to(tablet-down) {
       width: 100%;
@@ -42,9 +42,7 @@
 
     &-education {
       width: 100%;
-      @include respond-to(tablet-down) {
-        padding-bottom: 2em;
-        }
+      padding-bottom: 2em;
     }
   }
 
@@ -57,6 +55,8 @@
   }
 
   &__title {
+    padding-top: 1em;
+    padding-bottom: 1em;
     @include respond-to(tablet-down) {
         font-size: 0.8em;
     }

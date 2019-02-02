@@ -128,10 +128,10 @@ class PortfolioContainer extends Component {
                   <div key={category.id} className="portfolio__item">
                     <div className="item">
                       <div className="item__thumbnail">
-                          <button className="item__lightbox-button" onClick={() => this.showLightbox(category)}>
+                          <button aria-label={`Enlarge the ${category.project} image`} className="item__lightbox-button" onClick={() => this.showLightbox(category)}>
                             <Thumbnail 
                               thumbnail={category.hero} 
-                              heroAlt={category.alt}
+                              heroAlt={category.project}
                               isOpen={this.state.modalIsOpen}
                               onAfterOpen={this.afterOpenModal}
                               onRequestClose={this.closeModal}>

@@ -62,24 +62,28 @@ class IndexPage extends React.Component {
           keywords={[`gatsby`, `application`, `react`]}
         />
 
-        <Logo onClick={() => this.setState({ showMenu: false })} />
+        <header className="header">
+          <Logo onClick={() => this.setState({ showMenu: false })} />
+          <Nav
+            onHamburgerClick={this.handleMobileMenuState}
+            data={navData}
+            stateOfMenu={this.state.showMenu}
+            sectionName={this.state.sectionName}
+            onAnchorClick={() => this.setState({ showMenu: false })}
+          />
+        </header>
+
+
         {/* 
           - Hero Component 
         */}
+        
         <div id={'top'} />
         <Hero />
-
+        
         {/* 
           - Portfolio Component 
         */}
-
-        <Nav
-          onHamburgerClick={this.handleMobileMenuState}
-          data={navData}
-          stateOfMenu={this.state.showMenu}
-          sectionName={this.state.sectionName}
-          onAnchorClick={() => this.setState({ showMenu: false })}
-        />
         <div id={'portfolio'} />
         <Portfolio
           openLightbox={this.handleShowLightbox}

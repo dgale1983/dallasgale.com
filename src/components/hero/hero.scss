@@ -12,21 +12,35 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
-    width: 50%;
+    width: 5%;
     display: block;
     overflow: hidden;
-    position: absolute;
+    position: fixed;
     opacity: 0.9;
     height: 100vh;
     top: 0;
     left: 0;
   }
+  
+  &__photo--right {
+    background: $theme-default-night url('../../images/hero-photo2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    width: 5%;
+    display: block;
+    overflow: hidden;
+    position: fixed;
+    opacity: 0.9;
+    height: 100vh;
+    top: 0;
+    right: 0;
+  }
 
   &__intro {
     display: table-cell;
-    width: 80%;
-    padding-right: 17em !important;
-    padding-left: 10em !important;
+    width: 70%;
+    margin: 0 auto;
     vertical-align: middle;
 
     @include respond-to(tablet-down) {
@@ -44,14 +58,18 @@
       color: $theme-default-light;
       font-size: 1.7em;
       line-height: 1.6em;
+      padding-right: 30%;
+      padding-left: 30%;
       padding-top: 1em;
       padding-bottom: 1em;
-      text-align: right;
+      text-align: center;
       margin: 0 auto;
 
       @include respond-to(tablet-down) {
         text-align: center;
         font-size: 1.2em;
+        padding-right: 15%;
+        padding-left: 15%;
       }
     }
   }

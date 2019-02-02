@@ -4,7 +4,6 @@
 .contact {
   &__form {
     padding-top: 1em;
-    margin-bottom: 1em;
     max-width: 400px;
     margin: 0 auto;
     text-align: left;
@@ -13,25 +12,27 @@
       width: 100%;
       padding: 0.3em;
       margin-top: 0.5em;
-      margin-bottom: 0.5em;
+      margin-bottom: 1em;
       border: none;
     }
   }
   &__wrapper {
     background-color: $theme-default-night;
-    padding-bottom: 0;
-    padding-top: 0;
+    padding: 2em;
   }
 
   &__button {
     background: none;
-    border: none;
-    border-bottom: 3px solid transparent;
+    border: 1px solid $theme-default-light;
     text-transform: uppercase;
-    color: orange;
-    padding: 1em 0;
+    color: $theme-default-light;
+    padding: 1em 2em;
+    display: block;
+    position: relative;
+    margin: 0 auto;
     &:hover {
-      border-bottom-color: $theme-default-light;
+      background: $theme-default-light;
+      color: $theme-default-splash;
       transition: all 0.3s;
     }
   }
@@ -71,7 +72,7 @@
 
     img {
       width: 100%;
-      max-width: 30px;
+      max-width: 50px;
     }
     &-items {
       display: block;

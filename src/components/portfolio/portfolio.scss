@@ -37,7 +37,7 @@
     }
 
     @include respond-to(phone-down) {
-      padding: 3.2em 1em;
+      padding: 2em;
     }
   }
 
@@ -47,9 +47,13 @@
     // margin-right: -2.4em;
     z-index: 2;
     @include respond-to(tablet-down) {
-      top: 0.3em;
+      top: 30px;
       margin-right: 3.2em;
     }
+    @include respond-to(phone-down) {
+      top: 17px;
+    }
+
   }
 
   &__content {

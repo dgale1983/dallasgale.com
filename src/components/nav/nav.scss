@@ -46,13 +46,13 @@
     color: $theme-default-light;
     font-size: 0.6em;
     font-weight: bold;
-    height: 20px;
+    height: 80px;
     width: 20px;
     display: none;
     outline: none;
     position: fixed;
     right: 2em;
-    top: 2em;
+    top: 1em;
     text-align: center;
     visibility: hidden;
     z-index: 2;
@@ -64,9 +64,13 @@
       visibility: visible;
     }
 
+    @include respond-to(phone-down) {
+      height: 50px;
+    }
+
 
     &-bars {
-      background: $theme-default-splash;
+      background: $theme-default-light;
       display: block;
       height: 2px;
       position: absolute;
@@ -77,32 +81,44 @@
           top: 0;
       }
       &--middle {
-          top: 9px;
+          top: 40px;
           left: 0;
           bottom: 9px;
+          @include respond-to(phone-down) {
+            top: 25px;
+          }
+      
       }
       &--bottom {
-        left: 0;
+          left: 0;
           bottom: 0;
       }
     }
     &.open {
       .nav__hamburger-bars--top {
           transform: rotate(45deg);
-          top: 9px;
+          top: 40px;
           width: 20px;
           left: 0px;
           transition: all 0.1s;
+          @include respond-to(phone-down) {
+            top: 25px;
+          }
+      
       }
       .nav__hamburger-bars--middle {
           display: none;
       }
       .nav__hamburger-bars--bottom {
           transform: rotate(-45deg);
-          top: 9px;
+          top: 40px;
           width: 20px;
           left: 0px;
           transition: all 0.1s;
+          @include respond-to(phone-down) {
+            top: 25px;
+          }
+      
       }
     }
   }

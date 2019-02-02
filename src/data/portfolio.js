@@ -19,8 +19,6 @@ import mmHomepage from '../images/portfolio/GEE/majormedia.jpg'
 // Me
 import dgLogo from '../images/logos/dg.png';
 import esnHomepage from '../images/portfolio/ESN/landing.jpg'
-// import mlbHomepage from '../images/portfolio/MLG/mlb-homepage.jpg'
-
 
 
 const PortfolioData = [

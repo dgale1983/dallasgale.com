@@ -4,13 +4,13 @@ import Training from '../components/training/training.component';
 
 
 //* Data for <Work /> components
-import Data from '../data/training.json';
-const trainingData = Data.training;
+import TrainingData from '../data/training.js';
+// const trainingData = Data.training;
 
 class TrainingContainer extends Component {
     render() {
         return (
-            <Training data={ trainingData } />
+            <Training data={ TrainingData } />
         );
     }
 }
