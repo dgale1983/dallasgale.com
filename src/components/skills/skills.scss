@@ -27,7 +27,7 @@
             &-grid{
                 display: grid;
                 column-gap: 10em;        
-                grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+                grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
 
                 &-col {
                     padding-right: 3em;
@@ -42,8 +42,8 @@
     }
 
     &__li {    
-        color: $theme-default-mist;
-        font-size: 0.8em;
+        color: $theme-default-light;
+        font-size: 0.9em;
         line-height: 1.5em;
         font-weight: normal;
         margin-bottom: 0.8em;

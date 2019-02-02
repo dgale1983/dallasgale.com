@@ -27,13 +27,17 @@ const Details = ({ data }) => {
           </h3>
           <p className="typography__paragraph">{data.project}</p>
         </TextBlock>
-        <TextBlock>
-          <h3 className="typography__heading--h3  typography__color--splash">
-            URL
-          </h3>
-          <p className="typography__paragraph">
-            <a className="typography__color--light  typography__weight--bold" href={`https://${data.url}`}>{data.url}</a></p>
-        </TextBlock>
+        {
+          data.url ? (
+            <TextBlock>
+              <h3 className="typography__heading--h3  typography__color--splash">
+                URL
+              </h3>
+              <p className="typography__paragraph">
+                <a className="typography__color--light  typography__weight--bold" href={`https://${data.url}`}>{data.url}</a></p>
+            </TextBlock>
+          ) : null
+          }
       </div>
       <TextBlock>
         <h3 className="typography__heading--h3  typography__color--splash">

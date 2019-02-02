@@ -31,7 +31,7 @@ const PortfolioData = [
         url: "hia.ai",
         details: "Responsive re-design & build of the company website. A PWA using WordPress CMS with pre-compiled modular JS, jQuery & sass.",
         tools: "ES6 JS, jQuery, SASS, Gulp, WordPress, Lighthouse auditing",
-        employer: "hia Technologies",
+        employer: "HIA Technologies",
         employerLogo: hiaLogo,
         thumbnail: null,
         images: [
@@ -52,7 +52,7 @@ const PortfolioData = [
     {
         id: 2,
         date: "2018",
-        project: "hia Talk app",
+        project: "HIA Talk app",
         url: null,
         details: "App design & development using Unity Game Engine, C#, Adobe Photoshop & Adobe XD for wire-frames.",
         "tools": "ES6 JS, jQuery, SASS, Gulp, WordPress, Lighthouse auditing",
@@ -79,7 +79,7 @@ const PortfolioData = [
         project: "Client Portal",
         url: null,
         details: "Wire-frame & design ( development in progress ). .NET with React, Telerik graphs & charts and REST api.",
-        employer: "hia Technologies",
+        employer: "HIA Technologies",
         employerLogo: hiaLogo,         
         thumbnail: "",
         images: [
@@ -116,13 +116,13 @@ const PortfolioData = [
         uiDesign: true,
         unity: false,
         react: false,
-        angular: false
+        angular: false,
     },
     {
         id: 5,
         date: "2017",
         project: "Chief Knowledge Base",
-        url: "https://kb.chief.net.au",
+        url: "kb.chief.net.au",
         details: "Design & development of the site using Umbraco CMS, C#, Razor, sass, jQuery & JS.",
         employer: "My Local Group",
         employerLogo: mlgLogo,         

@@ -13,8 +13,7 @@ const Filter = props => {
             <AnchorLink
               className="filter__button"
               href={`#portfolio`}
-              onClick={`${filter.key}` })}
-            >
+              onClick={`${filter.key}` }>
               `${filter.label}`
             </AnchorLink>
           </li>

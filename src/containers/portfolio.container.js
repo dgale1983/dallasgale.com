@@ -88,7 +88,7 @@ class PortfolioContainer extends Component {
 
   render() {
     const { filterKey, list } = this.state
-    const { children, isOpen } = this.props
+    const { children } = this.props
     const filteredList = list.filter(PORTFOLIO_FILTERS[filterKey])
     
 
@@ -101,23 +101,21 @@ class PortfolioContainer extends Component {
           </h4>
 
           {/* Filtering */}
-          <div className="filter">
-            <ul className="filter__list">
-              {
-                filterKeys.map(filter => (
-                <li className="filter__item">
-                  <AnchorLink
-                    className="filter__button"
-                    href={`#portfolio`}
-                    onClick={() => this.setState({filterKey: filter.key})}
-                  >
-                    {filter.label}
-                  </AnchorLink>
-                </li>
-                ))
-                }
-              </ul>
-          </div>
+          <ul className="filter__list">
+            {
+              filterKeys.map(filter => (
+              <li key={filter.key} className="filter__item">
+                <AnchorLink
+                  className="filter__button"
+                  href={`#portfolio`}
+                  onClick={() => this.setState({filterKey: filter.key})}
+                >
+                  {filter.label}
+                </AnchorLink>
+              </li>
+              ))
+              }
+            </ul>
         </div>
 
         {/* The below should go in back to <Portfolio /> component */}

@@ -14,7 +14,7 @@ const Lightbox = props => {
           className="lightbox__image"
           style={{
             background: `url(${src})`,
-            backgroundSize: 'cover',
+            backgroundSize: '100%',
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center center',
           }}

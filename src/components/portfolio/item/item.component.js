@@ -6,13 +6,13 @@ import Details from '../details/details.component'
 import Thumbnail from '../thumbnail/thumbnail.component'
 
 const Item = props => {
-  const { data, modalOnClick, modalIsOpen, modalaAfterOpen, modalOnClose } = props
+  const { data, modalOnClick } = props
   
   return (
       <div className="item">
         <div className="item__thumbnail">
-            <button onClick={modalOnClick}>
-              <Thumbnail thumbnail={data.hero} heroAlt={data.alt} />
+            <button onClick={modalOnClick} aria-label={`Enlarge the ${data.project} image`}>
+              <Thumbnail thumbnail={data.hero} heroAlt={data.project} />
             </button>
            
         </div>

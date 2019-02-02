@@ -2,12 +2,10 @@
 @import '../../styles/breakpoints.scss';
 
 .hero {
-  // background: $theme-default-night;
   display: table;
   height: 100vh;
   width: 100%;
   position: relative;
-  // z-index: 11;
 
   &__photo {
     background: $theme-default-night url('../../images/hero-photo2.jpg');
@@ -27,18 +25,18 @@
   &__intro {
     display: table-cell;
     width: 80%;
-    padding-right: 17em;
-    padding-left: 10em;
+    padding-right: 17em !important;
+    padding-left: 10em !important;
     vertical-align: middle;
 
     @include respond-to(tablet-down) {
       width: 100%;
-      padding-right: 5em;
-      padding-left: 5em;
+      padding-right: 5em !important;
+      padding-left: 5em !important;
     }
     @include respond-to(phone-down) {
-      padding-right: 2em;
-      padding-left: 2em;
+      padding-right: 2em !important;
+      padding-left: 2em !important;
     }
 
     &--tagline {
