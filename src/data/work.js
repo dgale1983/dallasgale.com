@@ -2,7 +2,7 @@
 import hiaLogo from '../images/logos/hia-wh.png'
 
 // Isobar
-import isobarLogo from '../images/logos/isobar.png'
+import isobarLogo from '../images/logos/isobar-wh.png'
 
 // My Local Group
 import mlgLogo from '../images/logos/mlg-words.png'

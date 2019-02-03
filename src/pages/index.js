@@ -61,6 +61,7 @@ class IndexPage extends React.Component {
           title="DG - Frontend developer & designer"
           keywords={[`gatsby`, `application`, `react`]}
         />
+          
 
         <header className="header">
           <Logo onClick={() => this.setState({ showMenu: false })} />

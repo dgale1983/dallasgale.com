@@ -8,7 +8,7 @@
     padding-top: 0;
 
     @include respond-to(tablet-down) {
-      padding: 0 1em;
+      padding: 2em;
     }
   }
 
@@ -19,6 +19,7 @@
     width: 80%;
     @include respond-to(tablet-down) {
       padding-top: 5em;
+      width: 100%;
     }
 
     &-cell {
@@ -60,7 +61,7 @@
     padding-top: 1em;
     padding-bottom: 1em;
     @include respond-to(tablet-down) {
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
   }
 }

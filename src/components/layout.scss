@@ -529,18 +529,17 @@ pre tt:after {
 // Site Specific
 
 .header {
-
   @include respond-to(tablet-down) {
     display: block;
     position: fixed;
     top: 0;
     width: 100%;
     height: 110px;
-    z-index: 1;
-    background: $theme-default-night;
+    z-index: 6;
 
     @include respond-to(phone-down) {
       height: 80px;
+      // background: $theme-default-night;
     }
   }
 }
@@ -571,6 +570,7 @@ pre tt:after {
   // margin-left: 25%;
   width: 100%;
   position: relative;
+  z-index: 2;
    @include respond-to(tablet-down) {
     margin-left: 0;
     width: 100%;

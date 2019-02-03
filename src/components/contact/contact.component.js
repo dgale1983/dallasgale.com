@@ -13,7 +13,7 @@ const Contact = props => {
       <div className="content  contact__wrapper">
         <div className="contact__content">
           <div className="contact__content-details">
-          <SectionTitle title="Get In Touch" color="positive" position="center" />
+            <SectionTitle title="Get In Touch" color="positive" position="center" />
             <h3 className="typography__color--light">
               If you would like to discuss any future opportunities please
               contact me.
@@ -38,18 +38,20 @@ const Contact = props => {
             </ul>
             <div className="contact__form">
               <form name="contact" method="POST" data-netlify="true">
-                  <h4 className="typography__h4  typography__color--light">
-                    <label>Your Name <input type="text" name="name" /></label>   
-                  </h4>
-                  <h4 className="typography__h4  typography__color--light">
-                    <label>Your Email <input type="email" name="email" /></label>
-                  </h4>
-                  <h4>
-                    <label className="typography__h4  typography__color--light">Message <textarea name="message"></textarea></label>
-                  </h4>
-                  <h4 className="typography__h4">
-                    <button className="contact__button" type="submit">Send</button>
-                  </h4>
+                  <div className="contact__form-fields">
+                    <h4 className="contact__form-fields--top  typography__h4  typography__color--light">
+                      <label>Your Name <input type="text" name="name" /></label>   
+                    </h4>
+                    <h4 className="typography__h4  typography__color--light">
+                      <label>Your Email <input type="email" name="email" /></label>
+                    </h4>
+                  </div>
+                    <h4 className="contact__form-fields--top">
+                      <label className="typography__h4  typography__color--light">Message <textarea name="message"></textarea></label>
+                    </h4>
+                    <h4 className="typography__h4">
+                      <button className="contact__button" type="submit">Send</button>
+                    </h4>
                 </form>
             </div>
           </div>
