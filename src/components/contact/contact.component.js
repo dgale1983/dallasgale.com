@@ -16,12 +16,12 @@ const Contact = props => {
         <div className="contact__content">
           <div className="contact__content-details">
             <SectionTitle title="Get In Touch" color="positive" position="center" />
-            <h3 className="">
+            <h3>
               If you would like to discuss any future opportunities please
               contact me.
             </h3>
             <div className="contact__form">
-              <form name="contact" method="POST" data-netlify="true" action="/thanks/">
+              <form name="contact" method="POST" data-netlify="true" action="thanks/" data-netlify-honeypot="bot-field">
                   <div className="contact__form-fields">
                     <h4 className="contact__form-fields--top  typography__h4  ">
                       <label>Your Name <input type="text" name="name" /></label>   
