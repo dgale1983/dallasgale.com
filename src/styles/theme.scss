@@ -9,12 +9,13 @@ $theme-default-light: #ffffff;
 
 $theme-day-light: #e7eff3;
 $theme-day-dark: #034256;
+$theme-day-splash: #f1b50d;
 
 
 .theme {
     &__default {
         &--splash {
-            color: #46B57A;
+            color: $theme-default-splash;
         }
     }
 
@@ -30,5 +31,16 @@ $theme-day-dark: #034256;
         padding: 0.2em;
         left: 1em;
         z-index: 6;
+    }
+}
+
+// Theme mode day
+.theme {
+    &__mode {
+        &--day {
+            .theme__mode-btn {
+                color: $theme-day-splash;
+            }
+        }
     }
 }

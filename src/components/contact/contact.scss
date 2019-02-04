@@ -5,7 +5,7 @@
   color: $theme-default-light;
   padding: 2em;
   &__form {
-    padding-top: 1em;
+    padding-top: 3em;
     max-width: 400px;
     margin: 0 auto;
     text-align: left;
@@ -23,6 +23,19 @@
       grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
     }
   }
+
+  &__thanks {
+    background-color: $theme-default-night;
+    height: 100vh;
+    width: 100%;
+
+    &-logo {
+      width: 2em;
+      height: 2em;
+      margin: 0 auto;
+    }
+  }
+  
   &__wrapper {
     // background-color: $theme-default-night;
     padding: 2em;
@@ -112,13 +125,13 @@
     font-size: 3em;
     margin-right: 0;
     margin-top: 1em;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
     position: relative;
     top:0;
 
     @include respond-to(phone-down) {
       font-size: 2em;
-      top: 1.4em;
+      // top: 1.4em;
     }
   }
 }
@@ -133,7 +146,17 @@
       .contact {
         color: $theme-day-dark;
         &__button {
-          background: $theme-day-dark;
+          background: $theme-day-splash;
+          border: none;
+          &:hover {
+            color: $theme-day-splash;
+            background: $theme-day-dark;
+          }
+        }
+
+        &__thanks {
+          background: $theme-day-light;
+          color:  $theme-day-dark;
         }
       }
     }

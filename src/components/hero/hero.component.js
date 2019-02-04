@@ -4,29 +4,13 @@ import './hero.scss'
 
 // import PropTypes from 'prop-types';
 
-const Hero = props => {
+const Hero = ({children}) => {
   return (
     <section className="hero">
       
       <div className="content  hero__intro">
         <h1 className="hero__intro--tagline">
-          <span className="typography__weight--thin">
-            Hi, I’m{' '}
-            <span className="typography__color--splash  typography__weight--bold">
-              Dallas Gale
-            </span>
-            , a <span className="typography__weight--bold">web developer</span>{' '}
-            & <span className="typography__weight--bold">designer</span> based
-            in <span className="typography__weight--bold">NYC</span>, who loves{' '}
-            <span className="typography__weight--bold">
-              building with pixel bricks
-            </span>{' '}
-            and believes that{' '}
-            <span className="typography__weight--bold">
-              good design is a challenge to be mastered
-            </span>
-            .
-          </span>
+          { children }
         </h1>
       </div>
 

@@ -22,7 +22,6 @@
     &__button {
         background: none;
         border: none;
-        border-bottom: 1px solid $theme-default-splash;
         color: $theme-default-light;
         font-size: 0.7em;
         font-weight: bold;
@@ -78,3 +77,21 @@ input.filter__toggle-input {
 }
 
 
+
+
+// Theme
+.theme {
+    &__mode {
+        &--day {
+            .filter__title {
+                color: $theme-day-dark;
+            }
+
+            .filter__item {
+                a {
+                    background: $theme-day-splash;
+                }
+            }
+        }
+    }
+}

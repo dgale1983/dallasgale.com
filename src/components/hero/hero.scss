@@ -116,38 +116,7 @@
     height: 100vh;
   }
 
-  &__stripeOne {
-    animation: stripe infinite 1s;
-    background: $theme-default-splash;
-    height:500px;
-    width: 50px;
-    // transform: rotate(45deg);
-    position: absolute;
-    top: -50em;
-    opacity: 0.4;
-    left: 20em;
-  }
-  &__stripeTwo {
-    animation: stripe infinite 1s;
-    background: orange;
-    height: 600px;
-    width: 30px;
-    transform: rotate(25deg);
-    position: absolute;
-    top: -50em;
-    opacity: 0.4;
-    left: 20em;
-  }
-}
-
-@keyframes stripe {
-0% {
-  top: -600px;
-}
-100% { 
-  top:900px;;
-}
-
+  
 }
 
 @keyframes taglineAnimation {
@@ -163,7 +132,8 @@
 
 // SPACE BACKGROUND
 .planets {
-  animation: earth infinite 80s;
+  animation: earth 80s;
+  animation-iteration-count: 3;
   border-radius: 100%;
   position: fixed;
   bottom: 0;
@@ -175,6 +145,7 @@
   height: 60em;
   opacity: 0.8;
   transform: translate3d(0, 0, 0);
+  will-change: transform;
   z-index:2;
   &--1 {
 
@@ -187,7 +158,8 @@
 
 .stars {
   &__container {
-      animation: starsRotate infinite 130s;
+      animation: starsRotate 130s;
+      animation-iteration-count: 3;
       display: block;
       position: fixed;
       top: 0;
@@ -196,6 +168,7 @@
       height: 100vh;
       width: 100%;
       transform: translate3d(0, 0, 0);
+      will-change: transform;
       z-index: 1;
   }
   &__star {
@@ -205,9 +178,12 @@
       height: 2px;
       position: absolute;
       transform: translate3d(0, 0, 0);
+      will-change: transform;
       // z-index: 5;
       &--1 {
-          animation: stars2 infinite 2s;
+          animation: stars2 2s;
+          animation-iteration-count: 3;
+          will-change: transform;
           top:12%;
           left: 22%;
       }
@@ -234,7 +210,9 @@
           left: 40%;
       }
       &--7 {
-          animation: stars infinite 10s;
+          animation: stars 10s;
+          animation-iteration-count: 3;
+          will-change: transform;
           top:4%;
           left: -22%;
       }
@@ -257,12 +235,16 @@
           right: 20%;
       }
       &--12 {
-          animation: stars infinite 5s;
+          animation: stars 5s;
+          animation-iteration-count: 3;
+          will-change: transform;
           bottom:-10%;
           right: -12%;
       }
       &--13 {
-          animation: stars2 infinite 2s;
+          animation: stars2 2s;
+          animation-iteration-count: 3;
+          will-change: transform;
           top:13%;
           left: 22%;
       }
@@ -289,7 +271,9 @@
           left: 42%;
       }
       &--19 {
-          animation: stars infinite 10s;
+          animation: stars 10s;
+          animation-iteration-count: 3;
+          will-change: transform;
           top:6%;
           left: -20%;
       }
@@ -312,7 +296,9 @@
           right: 22%;
       }
       &--24 {
-          animation: stars infinite 5s;
+          animation: stars 5s;
+          animation-iteration-count: 3;
+          will-change: transform;
           bottom:-12%;
           right: -12%;
       }
@@ -338,14 +324,14 @@
       opacity: 0.8;
       transform: scale(0.1);
   }
-  40% {
-      opacity: 0.3;
-      transform: scale(1.4);
-  }
-  60% {
-      opacity: 0.8;
-      transform: scale(1.2);
-  }
+  // 40% {
+  //     opacity: 0.3;
+  //     transform: scale(1.4);
+  // }
+  // 60% {
+  //     opacity: 0.8;
+  //     transform: scale(1.2);
+  // }
   100% {
       opacity: 0.8;
       transform: scale(1);
@@ -357,13 +343,13 @@
       opacity: 0.3;
       transform: scale(0.1);
   }
-  20% {
-      opacity: 0.5;
-      transform: scale(0.6);
-  }
-  60% {
-      opacity: 0.8;
-  }
+  // 20% {
+  //     opacity: 0.5;
+  //     transform: scale(0.6);
+  // }
+  // 60% {
+  //     opacity: 0.8;
+  // }
   100% {
       opacity: 0.2;
       transform: scale(1);

@@ -73,3 +73,13 @@ p {
     }
   }
 }
+
+.theme {
+    &__mode {
+        &--day {
+            .typography__color--splash {
+               color: $theme-day-splash;
+            }
+        }
+    }
+}

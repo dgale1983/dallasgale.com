@@ -2,11 +2,13 @@ import React from 'react'
 import SectionTitle from '../typography/sectionTitle.component'
 import './contact.scss'
 import LinkedInLogo from '../../images/logos/in-wh.png'
+import LinkedInLogo_day from '../../images/logos/in.png'
 import GitHubLogo from '../../images/logos/gh-wh.png'
+import GitHubLogo_day from '../../images/logos/gh.png'
 // import PropTypes from 'prop-types';
 
 const Contact = props => {
-  const { children } = props
+  const { children, mode } = props
 
   return (
     <section className="section  contact">
@@ -18,26 +20,8 @@ const Contact = props => {
               If you would like to discuss any future opportunities please
               contact me.
             </h3>
-            <ul className="contact__list">
-              <li className="contact__list-items--connect">
-                <a
-                  className="typography__weight--bold  typography__color--splash"
-                  href="http://www.linkedin.com/in/dallas-gale"
-                >
-                  <img src={LinkedInLogo} alt="My LinkedIn profile" />
-                </a>
-              </li>
-              <li className="contact__list-items--connect">
-                <a
-                  className="typography__weight--bold  typography__color--splash"
-                  href="http://github.com/dgale1983"
-                >
-                  <img src={GitHubLogo} alt="My GitHub repository" />
-                </a>
-              </li>
-            </ul>
             <div className="contact__form">
-              <form name="contact" method="POST" data-netlify="true">
+              <form name="contact" method="POST" data-netlify="true" action="/thanks">
                   <div className="contact__form-fields">
                     <h4 className="contact__form-fields--top  typography__h4  ">
                       <label>Your Name <input type="text" name="name" /></label>   
@@ -54,6 +38,25 @@ const Contact = props => {
                     </h4>
                 </form>
             </div>
+
+            <ul className="contact__list">
+              <li className="contact__list-items--connect">
+                <a
+                  className="typography__weight--bold  typography__color--splash"
+                  href="http://www.linkedin.com/in/dallas-gale"
+                >
+                  <img src={mode === 'night' ? (LinkedInLogo) : (LinkedInLogo_day)} alt="My LinkedIn profile" />
+                </a>
+              </li>
+              <li className="contact__list-items--connect">
+                <a
+                  className="typography__weight--bold  typography__color--splash"
+                  href="http://github.com/dgale1983"
+                >
+                  <img src={mode === 'night' ? (GitHubLogo) : (GitHubLogo_day)} alt="My GitHub repository" />
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

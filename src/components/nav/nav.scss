@@ -183,3 +183,24 @@
     opacity: 1;
   }
 }
+
+
+
+// Theme
+.theme {
+  &__mode {
+    &--day {
+      .nav__button {
+        color:  $theme-day-splash;
+        border-bottom-color: $theme-day-dark;
+      }
+      .nav__hamburger-bars {
+        background: $theme-day-dark;
+      }
+
+      .open {
+        background: $theme-day-light;
+      }
+    }
+  }
+}

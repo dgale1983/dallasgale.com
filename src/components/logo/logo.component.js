@@ -10,7 +10,7 @@ const Logo = props => {
       <AnchorLink
         offset="0"
         className="logo__wrapper"
-        href="#top"
+        href={props.href}
         onClick={props.onClick}
       >
         <img src={LogoImage} alt="DG" className="logo__img" />

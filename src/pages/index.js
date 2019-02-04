@@ -98,16 +98,34 @@ class IndexPage extends React.Component {
             onAnchorClick={this.handleAnchorClick}
           />
 
-        <header className="header">
-          <Logo onClick={() => this.setState({ showMenu: false })} />
-        </header>
+        {/* <header className="header"> */}
+          <Logo href="#top" onClick={() => this.setState({ showMenu: false })} />
+        {/* </header> */}
 
         {/* 
           - Hero Component 
         */}
 
         <div id={'top'} />
-        <Hero />
+        <Hero>
+        <span className="typography__weight--thin">
+            Hi, I’m{' '}
+            <span className="typography__color--splash  typography__weight--bold">
+              Dallas Gale
+            </span>
+            , a <span className="typography__weight--bold">web developer</span>{' '}
+            & <span className="typography__weight--bold">designer</span> based
+            in <span className="typography__weight--bold">NYC</span>, who loves{' '}
+            <span className="typography__weight--bold">
+              building with pixel bricks
+            </span>{' '}
+            and believes that{' '}
+            <span className="typography__weight--bold">
+              good design is a challenge to be mastered
+            </span>
+            .
+          </span> 
+        </Hero>
 
         {/* 
           - Portfolio Component 
@@ -142,7 +160,7 @@ class IndexPage extends React.Component {
             - Contact Component 
           */}
         <div id={'contact'} />
-        <Contact />
+        <Contact mode={this.state.theme} />
         {/* </div> */}
 
         {/* {lightbox} */}

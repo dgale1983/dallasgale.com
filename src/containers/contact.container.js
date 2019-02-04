@@ -6,7 +6,7 @@ import Contact from '../components/contact/contact.component';
 class ContactContainer extends Component {
     render() {
         return (
-            <Contact />
+            <Contact mode={this.props.mode} />
         );
     }
 }
