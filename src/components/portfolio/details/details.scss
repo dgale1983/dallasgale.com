@@ -1,11 +1,15 @@
 @import '../../../styles/breakpoints.scss';
+@import '../../../styles/theme.scss';
 
 .details {
 
-
+  a {
+    color: $theme-default-light;
+  }
   &__toplevel {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    grid-column-gap: 10%;
+    grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
     @include respond-to(phone-down) {
       display: block;
     }
@@ -18,6 +22,17 @@
     img {
       max-height: 20px;
       width: auto;
+    }
+  }
+}
+
+
+.theme {
+  &__mode {
+    &--day {
+      .details a {
+        color: $theme-day-dark;
+      }
     }
   }
 }

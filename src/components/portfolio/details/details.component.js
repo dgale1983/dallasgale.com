@@ -39,7 +39,7 @@ const Details = ({ data, theme }) => {
                 URL
               </h3>
               <p className="typography__paragraph">
-                <a className="typography__color--light  typography__weight--bold" href={`https://${data.url}`}>{data.url}</a></p>
+                <a className="typography__weight--bold" href={`https://${data.url}`}>{data.url}</a></p>
             </TextBlock>
           ) : null
         }

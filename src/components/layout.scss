@@ -565,7 +565,7 @@ pre tt:after {
 .section {
   height: auto;
   // margin-left: 25%;
-  width: 80%;
+  width: 100%;
   position: relative;
   margin: 0 auto;
   z-index: 0;
@@ -588,7 +588,7 @@ pre tt:after {
     color: hsla(0, 0%, 0%, 0.8);
   }
   &--day {
-    background: $theme-default-day;
+    background: $theme-day-light;
 
   }
 }

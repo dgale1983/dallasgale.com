@@ -1,4 +1,5 @@
 @import '../../../styles/breakpoints.scss';
+@import '../../../styles/theme.scss';
 
 .work {
   &__item {
@@ -46,11 +47,24 @@
     }
 
     &-ul {
+      display: grid;
+      grid-column-gap: 10%;
+      grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
       margin-left: 0;
     }
 
     &-li {
-      padding-right: 2em;
+      // background-color: $theme-default-light;
+      border-bottom: 2px solid $theme-default-splash;
+      // border-radius: 3px;
+      padding: 2px;
+      text-align: center;
+      padding-right: 0;
+      font-size: 0.8em;
+      a {
+      color: $theme-default-night;
+        text-decoration: none;
+      }
     }
   }
 }

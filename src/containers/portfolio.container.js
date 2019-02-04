@@ -11,6 +11,8 @@ import '../components/portfolio/filter/filter.scss'
 //* Data for <Portfolio /> component
 import PortfolioData from '../data/portfolio';
 
+// const $ = window.$;
+
 // * Folio Filters
 const PORTFOLIO_FILTERS = {
   BY_ALL: category => category.all,
@@ -67,22 +69,52 @@ class PortfolioContainer extends Component {
       lightboxImage: '',
       list: PortfolioData,
       filterKey: 'BY_ALL',
+      disbleLightbox: false
     }
   }
 
+  // This is to disable the lightbox <button /> on devices due to z-index issue.
+  // To be resolved a more elegant way.
+  // handleScreenSize = () => {
+  //   if (window.$.innerWidth < 994) {
+  //     this.setState({disbleLightbox: true})
+  //   } else {
+  //     this.setState({disbleLightbox: false})
+  //   }
+  // }
+
   showLightbox = (image) => {
-    this.setState({ 
-      isLightboxOpen: true,
-      lightboxImage: image.hero
-    });
+      this.setState({ 
+        isLightboxOpen: true,
+        lightboxImage: image.hero
+      });
   }
 
-  componentDidUpdate() {
-    console.log('this.state.lightboxImage', this.state.lightboxImage)
-  }
+  // componentDidUpdate() {
+  //   console.log('this.state.lightboxImage', this.state.lightboxImage)
+  //   console.log(window.innerWidth);
+  //   console.log(this.state.disbleLightbox);
+  // }
 
   closeModal = () => {
     this.setState({modalIsOpen: false});
+  }
+
+
+  componentDidMount() {
+    this.handleScreenSize = () => {
+      if (window.innerWidth < 994) {
+        this.setState({disbleLightbox: true})
+      } else {
+        this.setState({disbleLightbox: false})
+      }
+    }
+    this.handleScreenSize();
+    window.addEventListener("resize", this.handleScreenSize);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.handleScreenSize)
   }
 
 
@@ -94,7 +126,7 @@ class PortfolioContainer extends Component {
 
 
     return (
-      <section className="section  portfolio">
+      <section className={`section  portfolio ${this.state.isLightboxOpen ? 'push-to-front' : null}`}>
         <div className="filter">
           <h4 className="typography__color--light  filter__title">
             FILTERED_{this.state.filterKey}
@@ -128,6 +160,15 @@ class PortfolioContainer extends Component {
                   <div key={category.id} className="portfolio__item">
                     <div className="item">
                       <div className="item__thumbnail">
+                          { this.state.disbleLightbox ? (
+                            <Thumbnail 
+                                thumbnail={category.hero} 
+                                heroAlt={category.project}
+                                isOpen={this.state.modalIsOpen}
+                                onAfterOpen={this.afterOpenModal}
+                                onRequestClose={this.closeModal}>
+                            </Thumbnail>
+                          ) : 
                           <button aria-label={`Enlarge the ${category.project} image`} className="item__lightbox-button" onClick={() => this.showLightbox(category)}>
                             <Thumbnail 
                               thumbnail={category.hero} 
@@ -137,6 +178,7 @@ class PortfolioContainer extends Component {
                               onRequestClose={this.closeModal}>
                              </Thumbnail>
                           </button>
+                          }
                           {
                             this.state.isLightboxOpen ? (
                               <Lightbox lightboxClose={() => this.setState({isLightboxOpen: false})} src={this.state.lightboxImage} />
@@ -147,12 +189,14 @@ class PortfolioContainer extends Component {
                         <Details data={category} theme={theme} />
                       </div>
                     </div>
+
                   </div>
                 )
               })}
+              <h3 className="typography__color--splash">...more to be uploaded soon!</h3>
+
             </div>
 
-            <h3 className="typography__color--splash">...more to be uploaded soon!</h3>
           </div>
 
       </section>

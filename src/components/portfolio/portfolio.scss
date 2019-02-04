@@ -3,7 +3,6 @@
 
 .portfolio {
   height: auto;
-  z-index: 1;
   @include respond-to(tablet-down) {
     height: auto;
   }
@@ -27,7 +26,7 @@
     margin: 0 auto;
     padding-left: 0;
     position: relative;
-    width: 80%;
+    // width: 80%;
 
     @include respond-to(tablet-down) {
       box-shadow: none;
@@ -47,7 +46,7 @@
     z-index: 2;
     @include respond-to(tablet-down) {
       top: 30px;
-      margin-right: 3.2em;
+      margin-right: 3em;
     }
     @include respond-to(phone-down) {
       top: 17px;
@@ -59,15 +58,15 @@
     color: $theme-default-light;
     display: grid;
     column-gap: 5em;
-    grid-template-columns: repeat(auto-fill, minmax(22em, 1fr));
-    max-width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(23em, 1fr));
+    width: 70%;
     margin: 0 auto;
     padding: 0em 1em 0;
 
     @include respond-to(tablet-down) {
-      max-width: 100%;
+      width: 100%;
       padding: 0;
-      grid-template-columns: repeat(auto-fill, minmax(22em, 1fr));
+      // grid-template-columns: repeat(auto-fill, minmax(23em, 1fr));
     }
 
     @include respond-to(phone-down) {
@@ -78,6 +77,10 @@
   &__item {
     padding-bottom: 2em;
     vertical-align: top;
+  }
+
+  &.push-to-front {
+    z-index: 1;
   }
 }
 

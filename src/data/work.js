@@ -27,22 +27,22 @@ const WorkData = [
     projects: [
       {
         id: 1,
-        title: 'HIA Talk app ( Android / iOS / WebGL )',
+        title: 'HIA Talk app',
         url: false,
       },
       {
         id: 2,
+        title: 'HIA Talk style-guide',
+        url: false,
+      },
+      {
+        id: 3,
         title: 'HIA Company Site',
         url: 'hia.ai',
       },
       {
-        id: 3,
-        title: 'Bracket ( Unity Software )',
-        url: false,
-      },
-      {
         id: 4,
-        title: 'App style-guide',
+        title: 'Bracket',
         url: false,
       },
       {
@@ -100,7 +100,7 @@ const WorkData = [
       },
       {
         id: 4,
-        title: 'Ny Local Aggregation',
+        title: 'My Local Aggregation',
         url: 'mylocalaggregation.com.au',
       },
       {
