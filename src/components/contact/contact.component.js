@@ -21,7 +21,7 @@ const Contact = props => {
               contact me.
             </h3>
             <div className="contact__form">
-              <form name="contact" method="POST" data-netlify="true" action="/thanks">
+              <form name="contact" method="POST" data-netlify="true" action="/thanks/">
                   <div className="contact__form-fields">
                     <h4 className="contact__form-fields--top  typography__h4  ">
                       <label>Your Name <input type="text" name="name" /></label>   
