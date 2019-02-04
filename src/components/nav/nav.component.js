@@ -8,6 +8,7 @@ const Nav = props => {
   return (
     <>
       <button
+        aria-label="Mobile Menu"
         onClick={onHamburgerClick}
         className={`nav__hamburger  ${stateOfMenu ? 'open' : 'closed'}`}
       >
