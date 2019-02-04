@@ -3,6 +3,7 @@
 
 .portfolio {
   height: auto;
+  z-index: 1;
   @include respond-to(tablet-down) {
     height: auto;
   }
@@ -77,5 +78,18 @@
   &__item {
     padding-bottom: 2em;
     vertical-align: top;
+  }
+}
+
+
+// Theme Mode
+
+.theme {
+  &__mode {
+    &--day {
+      .portfolio__content {
+        color: $theme-day-dark;
+      }
+    }
   }
 }

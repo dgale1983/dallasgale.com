@@ -57,3 +57,16 @@
         }
     }
 }
+
+
+// Theme Mode
+
+.theme {
+    &__mode {
+      &--day {
+        .skills__li {
+          color: $theme-day-dark;
+        }
+      }
+    }
+  }

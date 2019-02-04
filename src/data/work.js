@@ -1,14 +1,18 @@
 // hia
 import hiaLogo from '../images/logos/hia-wh.png'
+import hiaLogo_color from '../images/logos/hia.png'
 
 // Isobar
 import isobarLogo from '../images/logos/isobar-wh.png'
+import isobarLogo_color from '../images/logos/isobar.png'
 
 // My Local Group
 import mlgLogo from '../images/logos/mlg-words.png'
+import mlgLogo_color from '../images/logos/mlg.png'
 
 // Gee Digital
 import geeLogo from '../images/logos/gee-wh.png'
+import geeLogo_color from '../images/logos/gee.png'
 
 const WorkData = [
   {
@@ -48,6 +52,7 @@ const WorkData = [
       },
     ],
     logo: hiaLogo,
+    logo_color: hiaLogo_color,
   },
   {
     id: 2,
@@ -66,6 +71,7 @@ const WorkData = [
       },
     ],
     logo: isobarLogo,
+    logo_color: isobarLogo_color,
   },
   {
     id: 3,
@@ -104,6 +110,7 @@ const WorkData = [
       },
     ],
     logo: mlgLogo,
+    logo_color: mlgLogo_color,
   },
   {
     id: 4,
@@ -177,6 +184,7 @@ const WorkData = [
       },
     ],
     logo: geeLogo,
+    logo_color: geeLogo_color,
   },
 ]
 

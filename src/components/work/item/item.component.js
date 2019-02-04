@@ -4,13 +4,19 @@ import './item.scss'
 // import PropTypes from 'prop-types';
 
 const Item = props => {
-  const { data } = props
+  const { data, theme } = props
 
   return (
     <>
       <div className="work__item-content">
         <div className="work__item-content-logo">
-          <img src={data.logo} alt={data.who} />
+          {
+            theme === 'night' ? (
+              <img src={data.logo} alt={data.who} />
+            ) : (
+              <img src={data.logo_color} alt={data.who} />
+            )
+          }
         </div>
         <div className="work__item-content-info">
           <TextBlock>
@@ -45,7 +51,7 @@ const Item = props => {
             </h3>
             <a
               href={`http://${data.contact}`}
-              className="typography__paragraph  typography__color--light  typography__weight--bold"
+              className="typography__paragraph    typography__weight--bold"
               target="_blank"
               rel="noopener norefferer"
             >
@@ -72,7 +78,7 @@ const Item = props => {
                     className="work__item-li  work__item-projects"
                   >
                     <a
-                      className="typography__color--light  typography__style--italic"
+                      className="  typography__style--italic"
                       href={p.url}
                       alt={p.title}
                     >
@@ -82,7 +88,7 @@ const Item = props => {
                 ) : (
                   <li
                     key={`${p.id}+nolink`}
-                    className="work__item-li  work__item-projects typography__color--light  typography__style--italic"
+                    className="work__item-li  work__item-projects   typography__style--italic"
                   >
                     {p.title}
                   </li>

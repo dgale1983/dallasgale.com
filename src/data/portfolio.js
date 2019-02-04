@@ -1,11 +1,13 @@
 // hia
 import hiaLogo from '../images/logos/hia-wh.png'
+import hiaLogoColor from '../images/logos/hia.png'
 import hiaHomepage from '../images/portfolio/hia/homepage.jpg'
 import hiaTalk from '../images/portfolio/hia/hiatalk-1-2.jpg'
 import hiaPortal from "../images/portfolio/hia/portal1.jpg"
 
 // My Local Group
 import mlgLogo from '../images/logos/mlg-words.png'
+import mlgLogoColor from '../images/logos/mlg.png'
 import mlaHomepage from '../images/portfolio/MLG/mla.jpg'
 import kbHomepage from '../images/portfolio/MLG/kb-homepage.jpg'
 import fhlHomepage from '../images/portfolio/MLG/fhl.jpg'
@@ -13,6 +15,7 @@ import mlbHomepage from '../images/portfolio/MLG/mlb-homepage.jpg'
 
 // Gee Digital
 import geeLogo from '../images/logos/gee-wh.png'
+import geeLogoColor from '../images/logos/gee.png'
 import autopHomepage from '../images/portfolio/GEE/autophoto.jpg'
 import mmHomepage from '../images/portfolio/GEE/majormedia.jpg'
 
@@ -31,6 +34,7 @@ const PortfolioData = [
         tools: "ES6 JS, jQuery, SASS, Gulp, WordPress, Lighthouse auditing",
         employer: "HIA Technologies",
         employerLogo: hiaLogo,
+        employerLogo_color: hiaLogoColor,
         thumbnail: null,
         images: [
             ".../images/portfolio/hia/homepage2.jpg",
@@ -55,7 +59,8 @@ const PortfolioData = [
         details: "App design & development using Unity Game Engine, C#, Adobe Photoshop & Adobe XD for wire-frames.",
         "tools": "ES6 JS, jQuery, SASS, Gulp, WordPress, Lighthouse auditing",
         employer: "hia Technologies",
-        employerLogo: hiaLogo,         
+        employerLogo: hiaLogo,      
+        employerLogo_color: hiaLogoColor,   
         thumbnail: "",
         images: [
             "../images/portfolio/hia/hiatalk-3-4.jpg"
@@ -78,7 +83,8 @@ const PortfolioData = [
         url: null,
         details: "Wire-frame & design ( development in progress ). .NET with React, Telerik graphs & charts and REST api.",
         employer: "HIA Technologies",
-        employerLogo: hiaLogo,         
+        employerLogo: hiaLogo,       
+        employerLogo_color: hiaLogoColor,  
         thumbnail: "",
         images: [
             "../images/portfolio/hia/portal2.jpg",
@@ -102,7 +108,8 @@ const PortfolioData = [
         url: "mylocalaggregation.com.au",
         details: "Design & development of the site using Umbraco CMS, C#, Razor, sass, jQuery & JS.",
         employer: "My Local Group",
-        employerLogo: mlgLogo,         
+        employerLogo: mlgLogo,     
+        employerLogo_color: mlgLogoColor,    
         thumbnail: "",
         images: [ null ],
         hero: mlaHomepage,
@@ -123,7 +130,8 @@ const PortfolioData = [
         url: "kb.chief.net.au",
         details: "Design & development of the site using Umbraco CMS, C#, Razor, sass, jQuery & JS.",
         employer: "My Local Group",
-        employerLogo: mlgLogo,         
+        employerLogo: mlgLogo,      
+        employerLogo_color: mlgLogoColor,       
         thumbnail: "",
         images: [ null ],
         hero: kbHomepage,
@@ -144,7 +152,8 @@ const PortfolioData = [
         url: null,
         details: "Design & development of the SPA using Angular framework with JS & sass.",
         employer: "My Local Group",
-        employerLogo: mlgLogo,         
+        employerLogo: mlgLogo,   
+        employerLogo_color: mlgLogoColor,          
         thumbnail: "",
         images: [ null ],
         hero: fhlHomepage,
@@ -165,7 +174,8 @@ const PortfolioData = [
         details: "Design & development of the site using Umbraco CMS, C#, Razor, sass, jQuery & JS.",
         employer: "My Local Group",
         url: "mylocalbroker.com.au",
-        employerLogo: mlgLogo,         
+        employerLogo: mlgLogo,   
+        employerLogo_color: mlgLogoColor,          
         thumbnail: "",
         images: [ null ],
         hero: mlbHomepage,
@@ -186,7 +196,8 @@ const PortfolioData = [
         url: null,
         details: "Design & development using vanilla JS, jQuery, sass.",
         employer: "GEE Digital",
-        employerLogo: geeLogo,         
+        employerLogo: geeLogo,  
+        employerLogo_color: geeLogoColor,           
         thumbnail: "",
         images: [ null ],
         hero: autopHomepage,
@@ -207,7 +218,8 @@ const PortfolioData = [
         url: "majormedia.com.au",
         details: "Responsive site development using JS, jQuery, sass & Bootstrap.",
         employer: "GEE Digital",
-        employerLogo: "../images/logos/gee-wh.png",         
+        employerLogo: geeLogo,     
+        employerLogo_color: geeLogoColor,       
         thumbnail: "",
         images: [ null ],
         hero: mmHomepage,
@@ -228,7 +240,8 @@ const PortfolioData = [
         url: "eyespynature.net",
         details: "Design & development of my photography site using React, sass, graphQL & Gatsby with Contentful ( headless CMS ).",
         employer: "Myself",
-        employerLogo: dgLogo,         
+        employerLogo: dgLogo,   
+        employerLogo_color: dgLogo,         
         thumbnail: "",
         images: [ null ],
         hero: esnHomepage,

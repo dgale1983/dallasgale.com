@@ -6,7 +6,7 @@ import Details from '../details/details.component'
 // import Thumbnail from '../thumbnail/thumbnail.component'
 
 const Item = props => {
-  const { data, modalOnClick } = props
+  const { data, modalOnClick, theme } = props
   
   return (
       <div className="item">
@@ -17,7 +17,7 @@ const Item = props => {
             </button>
         </div>
         <div className="item__details">
-          <Details data={data} />
+          <Details data={data} theme={theme} />
         </div>
       </div>
   )

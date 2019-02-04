@@ -6,7 +6,7 @@
   height: 100vh;
   width: 100%;
   position: relative;
-  z-index: 1;
+  z-index: 0;
 
   &__photo {
     background: $theme-default-night url('../../images/hero-photo2.jpg');
@@ -153,13 +153,374 @@
 @keyframes taglineAnimation {
   0% {
     opacity: 0;
-    // top: -2em;
-    // transform: scale(3)
   }
 
   100% {
     opacity: 1;
-    // top: 1em;
-    // transform: scale(1)
   }
 }
+
+
+// SPACE BACKGROUND
+.planets {
+  animation: earth infinite 80s;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  bottom: -800px;
+  margin: 0 auto;
+  width: 60em;
+  height: 60em;
+  opacity: 0.8;
+  transform: translate3d(0, 0, 0);
+  z-index:2;
+  &--1 {
+
+  }
+  &--2 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.stars {
+  &__container {
+      animation: starsRotate infinite 130s;
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100vh;
+      width: 100%;
+      transform: translate3d(0, 0, 0);
+      z-index: 1;
+  }
+  &__star {
+      background: $theme-default-light;
+      border-radius: 10px;
+      width: 2px;
+      height: 2px;
+      position: absolute;
+      transform: translate3d(0, 0, 0);
+      // z-index: 5;
+      &--1 {
+          animation: stars2 infinite 2s;
+          top:12%;
+          left: 22%;
+      }
+      &--2 {
+          top:20%;
+          left: 10%;
+      }
+      &--3 {
+          top:6%;
+          left: 18%;
+      }
+      &--4 {
+          top:18%;
+          left: 5%;
+          height: 4px;
+          width: 4px;
+      }
+      &--5 {
+          top:-2%;
+          right: 2%;
+      }
+      &--6 {
+          top:2%;
+          left: 40%;
+      }
+      &--7 {
+          animation: stars infinite 10s;
+          top:4%;
+          left: -22%;
+      }
+      &--8 {
+          bottom:-7%;
+          right: 30%;
+          height: 4px;
+          width: 4px;
+      }
+      &--9 {
+          bottom:10%;
+          left: 5%;
+      }
+      &--10 {
+          top:18%;
+          right: -5%;
+      }
+      &--11 {
+          top:-10%;
+          right: 20%;
+      }
+      &--12 {
+          animation: stars infinite 5s;
+          bottom:-10%;
+          right: -12%;
+      }
+      &--13 {
+          animation: stars2 infinite 2s;
+          top:13%;
+          left: 22%;
+      }
+      &--14 {
+          top:20%;
+          left: 11%;
+      }
+      &--15 {
+          top:16%;
+          left: 18%;
+      }
+      &--16 {
+          top:18%;
+          left: 15%;
+          height: 4px;
+          width: 4px;
+      }
+      &--17 {
+          top:-2%;
+          right: 25%;
+      }
+      &--18 {
+          top:5%;
+          left: 42%;
+      }
+      &--19 {
+          animation: stars infinite 10s;
+          top:6%;
+          left: -20%;
+      }
+      &--20 {
+          bottom:-5%;
+          right: -32%;
+          height: 6px;
+          width: 6px;
+      }
+      &--21 {
+          bottom:-12%;
+          left: -57%;
+      }
+      &--22 {
+          top:-20%;
+          right: -25%;
+      }
+      &--23 {
+          top:-12%;
+          right: 22%;
+      }
+      &--24 {
+          animation: stars infinite 5s;
+          bottom:-12%;
+          right: -12%;
+      }
+  }
+
+}
+
+
+.clouds {
+  display: none;
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  &__cloud {
+    background-color: rgba(255,255,255,1);
+  }
+}
+
+
+@keyframes stars {
+  0% {
+      opacity: 0.8;
+      transform: scale(0.1);
+  }
+  40% {
+      opacity: 0.3;
+      transform: scale(1.4);
+  }
+  60% {
+      opacity: 0.8;
+      transform: scale(1.2);
+  }
+  100% {
+      opacity: 0.8;
+      transform: scale(1);
+  }
+}
+
+@keyframes stars2 {
+  0% {
+      opacity: 0.3;
+      transform: scale(0.1);
+  }
+  20% {
+      opacity: 0.5;
+      transform: scale(0.6);
+  }
+  60% {
+      opacity: 0.8;
+  }
+  100% {
+      opacity: 0.2;
+      transform: scale(1);
+  }
+}
+
+@keyframes starsRotate {
+  0% {
+      opacity: 0;
+      transform: scale(0.5);
+  }
+  5% {
+      opacity: 1;
+  }
+  90% {
+      opacity: 1;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 0;
+  }
+}
+
+@keyframes earth {
+  0% {
+    opacity: 0.2;
+    box-shadow: inherit;
+      transform: scale(1);
+  }
+  80% {
+      // bottom: -2000px;
+      opacity: 1;
+      // background: black;
+      transform: scale(1.5);
+     
+  }
+  100% {
+      // background: $theme-default-night;
+      // box-shadow:none;
+      opacity: 0;
+      transform: scale(1.5);
+  }
+}
+
+
+
+.theme {
+  &__mode {
+    &--night {
+
+      // planets
+      .planets {
+        -webkit-box-shadow: 0px 0px 68px 28px rgba(255,242,217,0.3);
+        -moz-box-shadow: 0px 0px 68px 28px rgba(255,242,217,0.3);
+        box-shadow: 0px 0px 68px 28px rgba(255,242,217,0.3);
+        &__1 {
+          background: black;
+        }
+        
+      }
+    }
+    &--day {
+      
+      // clouds
+      .clouds {
+        display: block;
+        visibility: visible;
+        &-left {
+          left: -20em;
+        }
+        &-right {
+          right: -80em;
+        }
+        &__cloud {
+          border-radius: 100%;
+          -webkit-box-shadow: 0px 0px 68px 88px rgba(255,255,255,1);
+          -moz-box-shadow: 0px 0px 68px 88px rgba(255,255,255,1);
+          box-shadow: 0px 0px 68px 88px rgba(255,255,255,1);
+          &--1 {
+            opacity: 0.8;
+            height: 10em;
+            width: 30em;
+            top: -2em;
+            left: -3em;
+          }
+          &--2 {
+            opacity: 0.6;
+            height: 9em;
+            width: 50em;
+            top: 2em;
+            left: 4em;
+          }
+          &--3 {
+            opacity: 0.8;
+            height: 2em;
+            width: 30em;
+            top: -24em;
+            left: -5em;
+          }
+          &--4 {
+            opacity: 0.8;
+            height: 2em;
+            width: 40em;
+            top: -4em;
+            left: -5em;
+          }
+          &--5 {
+            opacity: 0.8;
+            height: 10em;
+            width: 30em;
+            top: -2em;
+            left: -3em;
+          }
+          &--6 {
+            opacity: 0.6;
+            height: 5em;
+            width: 50em;
+            top: 2em;
+            left: 4em;
+          }
+          &--7 {
+            opacity: 0.8;
+            height: 1em;
+            width: 30em;
+            top: -24em;
+            left: -5em;
+          }
+          &--8 {
+            opacity: 0.8;
+            height: 2em;
+            width: 40em;
+            top: -4em;
+            left: -5em;
+          }
+        }
+      }
+
+
+      .sun {
+        width: 5em;
+        height: 5em;
+        border-radius: 5em;
+        background-color: rgba(247,214,60,1);
+        position: absolute;
+        top: 10em;
+        left: 20em;
+        right: -30em;
+        -webkit-box-shadow: 0px 0px 68px 38px rgba(247,214,60,1);
+        -moz-box-shadow: 0px 0px 68px 38px rgba(247,214,60,1);
+        box-shadow: 0px 0px 68px 38px rgba(247,214,60,1);
+      }
+
+      // tagline
+      .hero__intro--tagline {
+        color: $theme-day-dark;
+      }
+    }
+  }
+}
+

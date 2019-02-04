@@ -88,7 +88,7 @@ class PortfolioContainer extends Component {
 
   render() {
     const { filterKey, list } = this.state
-    const { children } = this.props
+    const { children, theme } = this.props
     const filteredList = list.filter(PORTFOLIO_FILTERS[filterKey])
     
 
@@ -144,7 +144,7 @@ class PortfolioContainer extends Component {
                           }
                       </div>
                       <div className="item__details">
-                        <Details data={category} />
+                        <Details data={category} theme={theme} />
                       </div>
                     </div>
                   </div>

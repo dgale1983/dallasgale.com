@@ -2,7 +2,10 @@
 @import '../../styles/breakpoints.scss';
 
 .work {
-  color: $theme-default-mist;
+  color: $theme-default-light;
+  a {
+    color: $theme-default-light;
+  }
   &__wrapper {
 
     @include respond-to(tablet-down) {
@@ -29,6 +32,22 @@
     
     @include respond-to(phone-down) {
       display: block;
-  }
+    }
   }
 }
+
+
+// Theme Mode
+
+.theme {
+    &__mode {
+      &--day {
+        .work {
+          color: $theme-day-dark;
+          a {
+          color: $theme-day-dark;
+          }
+        }
+      }
+    }
+  }

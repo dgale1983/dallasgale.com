@@ -3,7 +3,7 @@ import TextBlock from '../../typography/textBlock.component'
 import './details.scss'
 // import PropTypes from 'prop-types';
 
-const Details = ({ data }) => {
+const Details = ({ data, theme }) => {
   return (
     <div className="details">
       <div className="details__toplevel">
@@ -12,7 +12,12 @@ const Details = ({ data }) => {
             Employer
           </h3>
           <div className="details__employer">
-            <img src={data.employerLogo} alt={data.employer} />
+            {
+              theme === 'night' ? (
+                <img src={data.employerLogo} alt={data.employer} />
+              ) : 
+              <img src={data.employerLogo_color} alt={data.employer} />
+            }
           </div>
         </TextBlock>
         <TextBlock>
@@ -37,7 +42,7 @@ const Details = ({ data }) => {
                 <a className="typography__color--light  typography__weight--bold" href={`https://${data.url}`}>{data.url}</a></p>
             </TextBlock>
           ) : null
-          }
+        }
       </div>
       <TextBlock>
         <h3 className="typography__heading--h3  typography__color--splash">

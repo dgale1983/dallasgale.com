@@ -9,7 +9,7 @@ class WorkContainer extends Component {
     render() {
         // console.log('projectsData', projectsData);
         return (
-            <Work data={ WorkData } />
+            <Work data={ WorkData } theme={this.props.theme} />
         );
     }
 }

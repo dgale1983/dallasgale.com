@@ -65,3 +65,16 @@
     }
   }
 }
+
+
+// Theme Mode
+
+.theme {
+    &__mode {
+      &--day {
+        .training {
+          color: $theme-day-dark;
+        }
+      }
+    }
+  }

@@ -4,7 +4,7 @@ import SectionTitle from '../typography/sectionTitle.component'
 import './portfolio.scss'
 
 const Portfolio = props => {
-  const { children, data } = props
+  const { children, data, theme } = props
 
   return (
     <>
@@ -18,6 +18,7 @@ const Portfolio = props => {
                 <Item
                   key={category.id}
                   data={category}
+                  theme={theme}
                 />
               </div>
             )

@@ -14,7 +14,7 @@ const Contact = props => {
         <div className="contact__content">
           <div className="contact__content-details">
             <SectionTitle title="Get In Touch" color="positive" position="center" />
-            <h3 className="typography__color--light">
+            <h3 className="">
               If you would like to discuss any future opportunities please
               contact me.
             </h3>
@@ -39,15 +39,15 @@ const Contact = props => {
             <div className="contact__form">
               <form name="contact" method="POST" data-netlify="true">
                   <div className="contact__form-fields">
-                    <h4 className="contact__form-fields--top  typography__h4  typography__color--light">
+                    <h4 className="contact__form-fields--top  typography__h4  ">
                       <label>Your Name <input type="text" name="name" /></label>   
                     </h4>
-                    <h4 className="typography__h4  typography__color--light">
+                    <h4 className="typography__h4  ">
                       <label>Your Email <input type="email" name="email" /></label>
                     </h4>
                   </div>
                     <h4 className="contact__form-fields--top">
-                      <label className="typography__h4  typography__color--light">Message <textarea name="message"></textarea></label>
+                      <label className="typography__h4  ">Message <textarea name="message"></textarea></label>
                     </h4>
                     <h4 className="typography__h4">
                       <button className="contact__button" type="submit">Send</button>

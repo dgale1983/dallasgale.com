@@ -38,3 +38,14 @@
     // margin-right: 0.2em;
   }
 }
+
+
+.theme {
+  &__mode {
+    &--day {
+      .sectionTitle {
+        color: $theme-day-dark;
+      }
+    }
+  }
+}

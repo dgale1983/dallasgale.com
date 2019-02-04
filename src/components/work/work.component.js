@@ -5,7 +5,7 @@ import './work.scss'
 // import PropTypes from 'prop-types';
 
 const Work = props => {
-  const { children, data } = props
+  const { children, data, theme } = props
 
   return (
     <section className="section  work">
@@ -15,7 +15,7 @@ const Work = props => {
         <div className="work__content">
           {/* Map over Data to render each <Item /> */}
           {data.map(d => (
-            <Item key={d.id} data={d} />
+            <Item key={d.id} data={d} theme={theme} />
           ))}
         </div>
       </div>

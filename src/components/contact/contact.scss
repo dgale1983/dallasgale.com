@@ -2,6 +2,8 @@
 @import '../../styles/breakpoints.scss';
 
 .contact {
+  color: $theme-default-light;
+  padding: 2em;
   &__form {
     padding-top: 1em;
     max-width: 400px;
@@ -100,6 +102,10 @@
     }
   }
 
+
+
+  // Component <SectionTitle /> from '/components/typography/sectionTitle/'
+
   .sectionTitle {
     display: block;
     float: none;
@@ -113,6 +119,23 @@
     @include respond-to(phone-down) {
       font-size: 2em;
       top: 1.4em;
+    }
+  }
+}
+
+
+
+// Theme Mode
+
+.theme {
+  &__mode {
+    &--day {
+      .contact {
+        color: $theme-day-dark;
+        &__button {
+          background: $theme-day-dark;
+        }
+      }
     }
   }
 }

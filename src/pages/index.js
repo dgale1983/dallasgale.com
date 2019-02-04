@@ -27,11 +27,11 @@ class IndexPage extends React.Component {
     super(props)
 
     this.state = {
+      isAnchorClicked: false,
       showModal: false,
       showMenu: false,
-      theme: 'default',
       sectionName: 'Section Name',
-      isAnchorClicked: false,
+      theme: 'night',
     }
 
     this.handleOpenLightbox = () => {
@@ -46,42 +46,69 @@ class IndexPage extends React.Component {
       })
     }
 
+    this.handleThemeMode = () => {
+      if (this.state.theme === 'night')
+        this.setState({
+          theme: 'day',
+        })
+      else {
+        this.setState({
+          theme: 'night',
+        })
+      }
+    }
+
     // When the Lightbox is visible th
     this.handleMobileMenuState = () => {
       this.setState({
         showMenu: !this.state.showMenu,
       })
     }
+
+    this.handleAnchorClick = () => {
+      this.setState({
+        showMenu: false,
+      })
+    }
+    
   }
+
+  // componentDidUpdate() {
+  //   console.log('modal', this.state.showModal);
+  // }
 
   render() {
     return (
-      <Layout>
+      <Layout theme={`theme__mode theme__mode--${this.state.theme}`}>
         <SEO
           title="DG - Frontend developer & designer"
           keywords={[`gatsby`, `application`, `react`]}
         />
-          
 
-        <header className="header">
-          <Logo onClick={() => this.setState({ showMenu: false })} />
-          <Nav
+        <button onClick={this.handleThemeMode} className={`theme__mode-btn theme__mode--${this.state.theme}`}>
+          Current mode: {this.state.theme}
+        </button>
+
+
+        <Nav
             onHamburgerClick={this.handleMobileMenuState}
             data={navData}
             stateOfMenu={this.state.showMenu}
             sectionName={this.state.sectionName}
-            onAnchorClick={() => this.setState({ showMenu: false })}
+            onAnchorClick={this.handleAnchorClick}
           />
-        </header>
 
+        <header className="header">
+          <Logo onClick={() => this.setState({ showMenu: false })} />
+        </header>
 
         {/* 
           - Hero Component 
         */}
-        
+
         <div id={'top'} />
         <Hero />
-        
+
         {/* 
           - Portfolio Component 
         */}
@@ -90,13 +117,14 @@ class IndexPage extends React.Component {
           openLightbox={this.handleShowLightbox}
           lightboxClose={this.handleHideLightbox}
           isOpen={this.state.showModal}
+          theme={this.state.theme}
         />
 
         {/* 
             - Work Component 
           */}
         <div id={'work'} />
-        <Work />
+        <Work theme={this.state.theme} />
 
         {/* 
             - Training Component 
