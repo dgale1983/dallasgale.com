@@ -1,8 +1,17 @@
+const dotenv = require("dotenv");
+
+if (process.env.ENVIRONMENT !== "production") {
+  dotenv.config();
+}
+
+const { spaceId, accessToken } = process.env;
+
+
 module.exports = {
   siteMetadata: {
-    title: `Portfolio`,
-    description: `My front-end development and design portfolio`,
-    author: `dgale`,
+    title: `Dallas Gale`,
+    description: `Dallas Gale's front-end development and design portfolio`,
+    author: `Dallas Gale (dallasgale@hotmail.com)`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -25,6 +34,11 @@ module.exports = {
         theme_color: `#46b57a`,
         display: `minimal-ui`,
         icon: `src/images/dg-icon.png`, // This path is relative to the root of the site.
+      },
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId,
+        accessToken        
       },
     },
     `gatsby-plugin-sass`,
