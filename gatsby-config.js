@@ -40,6 +40,10 @@ module.exports = {
         spaceId,
         accessToken        
       },
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-133848673-1",
+      },
     },
     `gatsby-plugin-sass`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
