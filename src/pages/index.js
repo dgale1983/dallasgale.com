@@ -85,10 +85,14 @@ class IndexPage extends React.Component {
           keywords={[`gatsby`, `application`, `react`]}
         />
 
+        {/* 
+          *
+          Create a <Mode /> component for the below...
+          *
+        */}
         <button onClick={this.handleThemeMode} className={`theme__mode-btn theme__mode--${this.state.theme}`}>
           Current mode: {this.state.theme}
         </button>
-
 
         <Nav
             onHamburgerClick={this.handleMobileMenuState}
@@ -98,14 +102,11 @@ class IndexPage extends React.Component {
             onAnchorClick={this.handleAnchorClick}
           />
 
-        {/* <header className="header"> */}
           <Logo href="#top" onClick={() => this.setState({ showMenu: false })} />
-        {/* </header> */}
 
         {/* 
           - Hero Component 
         */}
-
         <div id={'top'} />
         <Hero>
         <span className="typography__weight--thin">

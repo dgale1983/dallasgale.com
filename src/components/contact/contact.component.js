@@ -8,7 +8,7 @@ import GitHubLogo_day from '../../images/logos/gh.png'
 // import PropTypes from 'prop-types';
 
 const Contact = props => {
-  const { children, mode } = props
+  const { mode } = props
 
   return (
     <section className="section  contact">
@@ -21,7 +21,7 @@ const Contact = props => {
               contact me.
             </h3>
 
-            
+
             {/* ADD TO A <Form /> component */}
             <div className="contact__form">
               <form 

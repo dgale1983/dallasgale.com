@@ -25,16 +25,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Dallas Gale - Front-end developer & designer`,
-        short_name: `portfolio`,
-        start_url: `/`,
-        background_color: `#151414`,
-        theme_color: `#46b57a`,
-        display: `minimal-ui`,
-        icon: `src/images/dg-icon.png`, // This path is relative to the root of the site.
-      },
+      // Contentful API
       resolve: `gatsby-source-contentful`,
       options: {
         spaceId,
@@ -43,6 +34,20 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-133848673-1",
+      },
+      // Web Manifest
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Dallas Gale - Front-end developer & designer`,
+        short_name: `portfolio`,
+        start_url: `/`,
+        background_color: `#151414`,
+        theme_color: `#46b57a`,
+        display: `minimal-ui`,
+        // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
+        // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
+        display: "standalone",
+        icon: `src/images/dg-icon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-sass`,
