@@ -20,8 +20,17 @@ const Contact = props => {
               If you would like to discuss any future opportunities please
               contact me.
             </h3>
+
+            
+            {/* ADD TO A <Form /> component */}
             <div className="contact__form">
-              <form name="contact" method="POST" data-netlify="true" action="thanks/" netlify-honeypot="bot-field">
+              <form 
+                name="contact" 
+                method="POST" 
+                data-netlify="true" 
+                action="thanks/" 
+                netlify-honeypot="bot-field"
+                data-netlify-recaptcha="true">
                   <div className="contact__form-fields">
                     <h4 className="contact__form-fields--top  typography__h4  ">
                       <label>Your Name <input type="text" name="name" /></label>   
