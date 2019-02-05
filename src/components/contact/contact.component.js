@@ -21,7 +21,7 @@ const Contact = props => {
               contact me.
             </h3>
             <div className="contact__form">
-              <form name="contact" method="POST" data-netlify="true" action="thanks/" data-netlify-honeypot="bot-field">
+              <form name="contact" method="POST" data-netlify="true" action="thanks/" netlify-honeypot="bot-field">
                   <div className="contact__form-fields">
                     <h4 className="contact__form-fields--top  typography__h4  ">
                       <label>Your Name <input type="text" name="name" /></label>   
@@ -33,6 +33,7 @@ const Contact = props => {
                     <h4 className="contact__form-fields--top">
                       <label className="typography__h4  ">Message <textarea name="message"></textarea></label>
                     </h4>
+                    <div data-netlify-recaptcha="true"></div>
                     <h4 className="typography__h4">
                       <button className="contact__button" type="submit">Send</button>
                     </h4>
