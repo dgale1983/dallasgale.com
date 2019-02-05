@@ -12,7 +12,7 @@ export default function HTML(props) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         {/* Global site tag (gtag.js) - Google Analytics*/}
-        {/* <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133848673-1"></script> */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133848673-1"></script>
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
