@@ -86,13 +86,13 @@ class IndexPage extends React.Component {
         />
 
         {/* 
-          *
+          ********************************************
           Create a <Mode /> component for the below...
-          *
+          *********************************************
         */}
-        <button onClick={this.handleThemeMode} className={`theme__mode-btn theme__mode--${this.state.theme}`}>
+        {/* <button onClick={this.handleThemeMode} className={`theme__mode-btn theme__mode--${this.state.theme}`}>
           Current mode: {this.state.theme}
-        </button>
+        </button> */}
 
         <Nav
             onHamburgerClick={this.handleMobileMenuState}
