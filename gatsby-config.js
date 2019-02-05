@@ -34,6 +34,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-133848673-1",
+        head: true,
       },
       // Web Manifest
       resolve: `gatsby-plugin-manifest`,
