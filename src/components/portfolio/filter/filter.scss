@@ -2,96 +2,93 @@
 @import '../../../styles/breakpoints.scss';
 
 .filter {
-    // background: rgba(21,20,20,0.8);
-    position: sticky;
+  position: sticky;
+  display: block;
+  padding: 10px;
+  margin-top: 0em;
+  margin: 0 auto;
+  text-align: center;
+  top: 0em;
+  height: auto;
+  max-width: 800px;
+  z-index: 3;
+
+  @include respond-to(tablet-down) {
+    visibility: hidden;
+    display: none;
+  }
+
+  &__button {
+    background: none;
+    border: none;
+    color: $theme-default-light;
+    font-size: 0.7em;
+    font-weight: bold;
+    height: 100%;
+    padding-left: 0;
+    padding-bottom: 0.5em;
+    text-transform: lowercase;
+    text-align: left;
+    width: auto;
+    cursor: pointer;
+    &:hover {
+      color: $theme-default-night;
+      transition: all 0.2s;
+    }
+  }
+
+  &__title {
+    font-size: 0.5em;
+    margin-left: -1em;
+    padding: 0.3em 1em;
+  }
+
+  &__list {
     display: block;
-    padding: 10px;
-    margin-top: 0em;
-    margin: 0 auto;
-    text-align: center;
-    top: 0em;
     height: auto;
-    max-width: 800px;
-    z-index: 3;
+    list-style: none;
+    margin-left: 0;
+    margin-bottom: 0;
+    width: 100%;
+    vertical-align: middle;
+  }
 
-    @include respond-to(tablet-down) {
-        visibility: hidden;
-        display: none;
+  &__item {
+    margin-right: 1em;
+    display: inline-block;
+
+    a {
+      text-decoration: none;
+      background: $theme-default-splash;
+      padding: 0.4em 1em 0.5em;
+      border-radius: 2px;
     }
-
-    &__button {
-        background: none;
-        border: none;
-        color: $theme-default-light;
-        font-size: 0.7em;
-        font-weight: bold;
-        height: 100%;
-        padding-left: 0;
-        padding-bottom: 0.5em;
-        text-transform: lowercase;
-        text-align: left;
-        width: auto; 
-        cursor: pointer;
-        &:hover {
-            color: $theme-default-splash;
-            transition: all 0.2s;
-        }
-    }
-
-    &__title {
-        // background: $theme-default-splash;
-        font-size: 0.5em;
-        margin-left: -1em;
-        padding: 0.3em 1em;
-    }
-
-
-    &__list {
-        display: block;
-        height: auto;
-        list-style: none;
-        margin-left: 0;
-        margin-bottom: 0;
-        width: 100%;
-        vertical-align: middle;
-    }
-
-    &__item {
-        margin-right: 1em;
-        display: inline-block;
-
-        a {
-            text-decoration: none;
-            background:$theme-default-splash;
-            padding: 0.4em 1em 0.5em;
-            border-radius: 2px;
-        }
-    }
-
-
+  }
 }
 
 input.filter__toggle-input {
-    border-radius: 0;
-    background: black;
+  border-radius: 0;
+  background: black;
 }
-
-
-
 
 // Theme
 .theme {
-    &__mode {
-        &--day {
-            .filter__title {
+  &__mode {
+    &--day {
+        .filter__button {
+            &:hover {
                 color: $theme-day-dark;
             }
-
-            .filter__item {
-                a {
-                    background: $theme-day-splash;
-                }
-            }
         }
+      .filter__title {
+        color: $theme-day-dark;
+      }
+
+      .filter__item {
+        a {
+          background: $theme-day-splash;
+        }
+      }
     }
+  }
 }

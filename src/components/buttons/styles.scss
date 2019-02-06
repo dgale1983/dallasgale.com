@@ -1,0 +1,40 @@
+@import '../../styles/theme.scss';
+
+.button {
+  display: block;
+  width: auto;
+  padding: 0.2em 0;      
+  border: none;
+  border-bottom: 1px solid;
+  &__theme {
+    background: transparent;
+    border-bottom-color: $theme-default-light;
+    bottom: 1em;    
+    color: $theme-default-splash;
+    position: fixed;
+    font-size: 0.7em;
+    font-weight: bold;
+    text-align: left;
+    left: 1em;
+    z-index: 6;
+
+    &--type {
+      color: $theme-default-light;
+    }
+  }
+}
+
+// Theme > Day
+.theme {
+  &__mode {
+    &--day {
+      .button__theme {
+        border-bottom-color: $theme-day-dark;
+        color: $theme-day-dark;
+      }
+      .button__theme--type {
+        color: $theme-day-splash;
+      }
+    }
+  }
+}

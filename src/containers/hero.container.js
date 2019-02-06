@@ -8,7 +8,6 @@ const d = Data.hero
 
 class HeroContainer extends Component {
   render() {
-    console.log(d)
     return <Hero tagline={d[0].tagline} children={this.props.children} />
   }
 }

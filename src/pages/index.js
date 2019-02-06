@@ -3,14 +3,15 @@ import React from 'react'
 // * COMPONENTS
 import Contact from '../containers/contact.container'
 import Hero from '../containers/hero.container'
+import Logo from '../components/logo/logo.component'
 import Layout from '../components/layout'
 import Nav from '../components/nav/nav.component'
 import Portfolio from '../containers/portfolio.container'
 import Skills from '../containers/skills.container'
 import SEO from '../components/seo'
 import Training from '../containers/training.container'
+import ToggleTheme from '../components/buttons/toggleTheme.component'
 import Work from '../containers/work.container'
-import Logo from '../components/logo/logo.component'
 
 //* CSS
 import '../components/portfolio/item/item.scss'
@@ -73,9 +74,6 @@ class IndexPage extends React.Component {
     
   }
 
-  // componentDidUpdate() {
-  //   console.log('modal', this.state.showModal);
-  // }
 
   render() {
     return (
@@ -90,9 +88,7 @@ class IndexPage extends React.Component {
           Create a <Mode /> component for the below...
           *********************************************
         */}
-        {/* <button onClick={this.handleThemeMode} className={`theme__mode-btn theme__mode--${this.state.theme}`}>
-          Current mode: {this.state.theme}
-        </button> */}
+        <ToggleTheme onClick={this.handleThemeMode} theme={this.state.theme} />
 
         <Nav
             onHamburgerClick={this.handleMobileMenuState}
@@ -169,5 +165,7 @@ class IndexPage extends React.Component {
     )
   }
 }
+
+
 
 export default IndexPage

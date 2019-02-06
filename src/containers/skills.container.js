@@ -8,7 +8,6 @@ const skillsData = Data.skills[0].category;
 
 class SkillsContainer extends Component {
     render() {
-        console.log('skills', skillsData);
         return (
             <Skills data={skillsData} />
         );

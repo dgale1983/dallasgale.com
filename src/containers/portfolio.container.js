@@ -90,12 +90,6 @@ class PortfolioContainer extends Component {
       });
   }
 
-  // componentDidUpdate() {
-  //   console.log('this.state.lightboxImage', this.state.lightboxImage)
-  //   console.log(window.innerWidth);
-  //   console.log(this.state.disbleLightbox);
-  // }
-
   closeModal = () => {
     this.setState({modalIsOpen: false});
   }
