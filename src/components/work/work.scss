@@ -10,12 +10,9 @@
 
     @include respond-to(tablet-down) {
       margin-left: auto;
-      padding: 0 1em;
-    }
-
-    @include respond-to(phone-down) {
       padding: 2em;
     }
+
   }
 
   &__content {

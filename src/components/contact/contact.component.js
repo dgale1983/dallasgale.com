@@ -5,7 +5,7 @@ import LinkedInLogo from '../../images/logos/in-wh.png'
 import LinkedInLogo_day from '../../images/logos/in.png'
 import GitHubLogo from '../../images/logos/gh-wh.png'
 import GitHubLogo_day from '../../images/logos/gh.png'
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 const Contact = props => {
   const { mode, onFieldChange, onFormSubmit } = props
@@ -46,12 +46,18 @@ const Contact = props => {
                 <div className="contact__form-fields">
                   <h4 className="contact__form-fields--top  typography__h4  ">
                     <label>
-                      Your Name <input type="text" name="name" onChange={onFieldChange} />
+                      Your Name{' '}
+                      <input type="text" name="name" onChange={onFieldChange} />
                     </label>
                   </h4>
                   <h4 className="typography__h4  ">
                     <label>
-                      Your Email <input type="email" name="email" onChange={onFieldChange} />
+                      Your Email{' '}
+                      <input
+                        type="email"
+                        name="email"
+                        onChange={onFieldChange}
+                      />
                     </label>
                   </h4>
                 </div>
@@ -100,8 +106,10 @@ const Contact = props => {
   )
 }
 
-// Contact.propTypes = {
-
-// };
+Contact.propTypes = {
+  mode: PropTypes.string,
+  onFieldChange: PropTypes.func,
+  onFormSubmit: PropTypes.func,
+};
 
 export default Contact
