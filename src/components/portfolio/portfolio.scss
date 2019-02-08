@@ -26,7 +26,6 @@
     margin: 0 auto;
     padding-left: 0;
     position: relative;
-    // width: 80%;
 
     @include respond-to(tablet-down) {
       box-shadow: none;
@@ -66,7 +65,6 @@
     @include respond-to(tablet-down) {
       width: 100%;
       padding: 0;
-      // grid-template-columns: repeat(auto-fill, minmax(23em, 1fr));
     }
 
     @include respond-to(phone-down) {

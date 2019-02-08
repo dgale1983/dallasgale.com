@@ -8,7 +8,7 @@ import GitHubLogo_day from '../../images/logos/gh.png'
 import PropTypes from 'prop-types';
 
 const Contact = props => {
-  const { mode, onFieldChange, onFormSubmit } = props
+  const { theme, onFieldChange, onFormSubmit } = props
 
   return (
     <section className="section  contact">
@@ -82,7 +82,7 @@ const Contact = props => {
                   href="http://www.linkedin.com/in/dallas-gale"
                 >
                   <img
-                    src={mode === 'night' ? LinkedInLogo : LinkedInLogo_day}
+                    src={theme === 'night' ? LinkedInLogo : LinkedInLogo_day}
                     alt="My LinkedIn profile"
                   />
                 </a>
@@ -93,7 +93,7 @@ const Contact = props => {
                   href="http://github.com/dgale1983"
                 >
                   <img
-                    src={mode === 'night' ? GitHubLogo : GitHubLogo_day}
+                    src={theme === 'night' ? GitHubLogo : GitHubLogo_day}
                     alt="My GitHub repository"
                   />
                 </a>
@@ -107,7 +107,7 @@ const Contact = props => {
 }
 
 Contact.propTypes = {
-  mode: PropTypes.string,
+  theme: PropTypes.string,
   onFieldChange: PropTypes.func,
   onFormSubmit: PropTypes.func,
 };

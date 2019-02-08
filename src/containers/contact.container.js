@@ -41,7 +41,7 @@ class ContactContainer extends Component {
   render() {
     return (
       <Contact
-        mode={this.props.mode}
+        theme={this.props.theme}
         onFieldChange={this.handleChange}
         onFormSubmit={this.handleSubmit}
       />

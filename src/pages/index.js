@@ -1,7 +1,7 @@
 import React from 'react'
 
 // * COMPONENTS
-import BuiltWith from '../components/builtwith/builtwith.component'
+import BuiltWith from '../containers/builtwith.container'
 import Contact from '../containers/contact.container'
 import Hero from '../containers/hero.container'
 import Logo from '../components/logo/logo.component'
@@ -158,9 +158,9 @@ class IndexPage extends React.Component {
             - Contact Component 
           */}
         <div id={'contact'} />
-        <Contact mode={this.state.theme} />
+        <Contact theme={this.state.theme} />
 
-        <BuiltWith />
+        <BuiltWith theme={this.state.theme} />
       </Layout>
     )
   }
