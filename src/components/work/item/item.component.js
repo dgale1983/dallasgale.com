@@ -45,7 +45,8 @@ const Item = props => {
             </h3>
             <p className="typography__paragraph">{data.position}</p>
           </TextBlock>
-          <TextBlock>
+        </div>
+        <TextBlock>
             <h3 className="typography__heading--h3  typography__color--splash">
               Contact
             </h3>
@@ -58,7 +59,6 @@ const Item = props => {
               {data.contact}
             </a>
           </TextBlock>
-        </div>
         <div className="work__item-content-details">
           <TextBlock>
             <h3 className="typography__heading--h3  typography__color--splash">
@@ -66,7 +66,7 @@ const Item = props => {
             </h3>
             <p className="typography__paragraph">{data.details}</p>
           </TextBlock>
-          <TextBlock>
+          {/* <TextBlock>
             <h3 className="typography__heading--h3  typography__color--splash">
               Projects
             </h3>
@@ -78,7 +78,7 @@ const Item = props => {
                     className="work__item-li  work__item-projects"
                   >
                     <a
-                      className="  typography__style--italic"
+                      className="typography__style--italic"
                       href={p.url}
                       alt={p.title}
                     >
@@ -95,7 +95,7 @@ const Item = props => {
                 )
               )}
             </ul>
-          </TextBlock>
+          </TextBlock> */}
         </div>
       </div>
     </>
