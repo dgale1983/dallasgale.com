@@ -23,6 +23,7 @@ const PORTFOLIO_FILTERS = {
   BY_UI_DEVELOPMENT: category => category.webDev,
   BY_REACT: category => category.react,
   BY_UNITY: category => category.unity,
+  BY_WEBDESIGN: category => category.webDesign,
 }
 
 const filterKeys = [
@@ -58,6 +59,10 @@ const filterKeys = [
     label: "REACT",
     key: "BY_REACT",
   },
+  {
+    label: "WEB DESIGN",
+    key: "BY_WEBDESIGN",
+  },
 ]
 
 class PortfolioContainer extends Component {
@@ -72,16 +77,6 @@ class PortfolioContainer extends Component {
       disbleLightbox: false
     }
   }
-
-  // This is to disable the lightbox <button /> on devices due to z-index issue.
-  // To be resolved a more elegant way.
-  // handleScreenSize = () => {
-  //   if (window.$.innerWidth < 994) {
-  //     this.setState({disbleLightbox: true})
-  //   } else {
-  //     this.setState({disbleLightbox: false})
-  //   }
-  // }
 
   showLightbox = (image) => {
       this.setState({ 

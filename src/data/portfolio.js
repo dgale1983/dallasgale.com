@@ -18,6 +18,7 @@ import geeLogo from '../images/logos/gee-wh.png'
 import geeLogoColor from '../images/logos/gee.png'
 import autopHomepage from '../images/portfolio/GEE/autophoto.jpg'
 import mmHomepage from '../images/portfolio/GEE/majormedia.jpg'
+import trampHomepage from '../images/portfolio/GEE/trampoline.jpg'
 
 // Me
 import dgLogo from '../images/logos/dg.png';
@@ -68,7 +69,7 @@ const PortfolioData = [
         hero: hiaTalk,
         all: true,
         cms: false,
-        webDesign: true,
+        webDesign: false,
         webDev: true,
         appDev: true,
         uiDesign: true,
@@ -225,10 +226,32 @@ const PortfolioData = [
         hero: mmHomepage,
         all: true,
         cms: false,
-        webDesign: true,
+        webDesign: false,
         webDev: true,
         appDev: false,
         uiDesign: true,
+        unity: false,
+        react: false,
+        angular: false
+    },
+    {
+        id: 10,
+        date: "2015",
+        project: "Trampoline Gelato",
+        url: "trampolinegelato.com.au",
+        details: "Website re-design pitch.",
+        employer: "GEE Digital",
+        employerLogo: geeLogo,     
+        employerLogo_color: geeLogoColor,       
+        thumbnail: "",
+        images: [ null ],
+        hero: trampHomepage,
+        all: true,
+        cms: false,
+        webDesign: true,
+        webDev: false,
+        appDev: false,
+        uiDesign: false,
         unity: false,
         react: false,
         angular: false
