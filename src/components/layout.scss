@@ -564,6 +564,7 @@ pre tt:after {
 
 .section {
   height: auto;
+  min-height: 100vh;
   // margin-left: 25%;
   width: 100%;
   position: relative;

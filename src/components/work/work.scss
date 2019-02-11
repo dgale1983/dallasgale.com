@@ -18,8 +18,8 @@
   &__content {
     column-gap: 5em;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(22em, 1fr));
-    width: 60%;
+    grid-template-columns: repeat(auto-fill, minmax(28em, 1fr));
+    width: 70%;
     margin: 0 auto;
 
     @include respond-to(tablet-down) {

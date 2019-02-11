@@ -36,7 +36,7 @@
     display: grid;
     column-gap: 2em;
     width: 70%;
-    grid-template-columns: repeat(auto-fill, minmax(23em, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(29em, 1fr));
 
     @include respond-to(tablet-down) {
       width: 100%;
