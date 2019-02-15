@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 import './styles.scss';
 
@@ -12,7 +12,7 @@ const BuiltWith = ({tech, theme}) => {
                 <div className="builtwith__logos">
                     {
                         tech.map(t => (
-                            <a href={t.url}>
+                            <a key={t.url} href={t.url}>
                                 <img key={t.name} src={`${theme === 'day' ? (t.logoDay) : (t.logo)}`} alt={`${t.tagline} - ${t.name}`} />
                             </a>
                         ))
@@ -23,9 +23,9 @@ const BuiltWith = ({tech, theme}) => {
     );
 };
 
-BuiltWith.propTypes = {
-    tech: PropTypes.object,
-    theme: PropTypes.string,
-};
+// BuiltWith.propTypes = {
+//     tech: PropTypes.object,
+//     theme: PropTypes.string,
+// };
 
 export default BuiltWith;

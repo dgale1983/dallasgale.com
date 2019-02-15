@@ -10,7 +10,7 @@ import NetlifyLogo from '../images/logos/tech/netlify.png'
 import NetlifyLogo_day from '../images/logos/tech/netlify_day.png'
 import GitHubLogo from '../images/logos/tech/github.png'
 import GitHubLogo_day from '../images/logos/tech/github_day.png'
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 
 const tech = [
     {
@@ -58,8 +58,8 @@ class BuiltWithContainer extends Component {
     }
 }
 
-BuiltWithContainer.propTypes = {
-    theme: PropTypes.string,
-};
+// BuiltWithContainer.propTypes = {
+//     theme: PropTypes.string,
+// };
 
 export default BuiltWithContainer;

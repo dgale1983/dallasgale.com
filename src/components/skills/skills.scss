@@ -33,6 +33,9 @@
                 &-col {
                     padding-right: 3em;
                 }
+                @include respond-to(phone-down) {
+                    display: block;
+                }
             }
         }
         @include respond-to(tablet-down) {
