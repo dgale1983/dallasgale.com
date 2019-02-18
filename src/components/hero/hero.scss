@@ -69,6 +69,13 @@
       margin: 0 auto;
       opacity: 0;
 
+      > span {
+        max-width: 30em;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+      }
+
       @include respond-to(tablet-down) {
         text-align: center;
         font-size: 2em;
