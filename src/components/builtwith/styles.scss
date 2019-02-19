@@ -1,6 +1,11 @@
 @import '../../styles/theme.scss';
 
 .builtwith {
+    display: table;
+    &__wrapper {
+        display: table-cell;
+        vertical-align: middle;
+    }
     &__content {
         display: block;
         text-align: center;
