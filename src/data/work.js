@@ -24,35 +24,36 @@ const WorkData = [
     contact: 'www.hia.ai',
     details:
       "A start-up in the AI industry where I contributed design & development for their app 'HIA Talk', re-designed & built their current website, created prototypes, wire frames and style-guides as well as collaborated with developers at the Institute of Creative Technology and University of Southern California. I also produced video & photo content.",
+    extraLogoClass: null,
     projects: [
-      {
-        id: 1,
-        title: 'HIA Talk app',
-        url: false,
-      },
-      {
-        id: 2,
-        title: 'HIA Talk style-guide',
-        url: false,
-      },
-      {
-        id: 3,
-        title: 'HIA Company Site',
-        url: 'hia.ai',
-      },
-      {
-        id: 4,
-        title: 'Bracket',
-        url: false,
-      },
-      {
-        id: 5,
-        title: 'Client Portal',
-        url: false,
-      },
-    ],
-    logo: hiaLogo,
-    logo_color: hiaLogo_color,
+    {
+      id: 1,
+      title: 'HIA Talk app',
+      url: false,
+    },
+    {
+      id: 2,
+      title: 'HIA Talk style-guide',
+      url: false,
+    },
+    {
+      id: 3,
+      title: 'HIA Company Site',
+      url: 'hia.ai',
+    },
+    {
+      id: 4,
+      title: 'Bracket',
+      url: false,
+    },
+    {
+      id: 5,
+      title: 'Client Portal',
+      url: false,
+    },
+  ],
+  logo: hiaLogo,
+  logo_color: hiaLogo_color,
   },
   {
     id: 2,
@@ -63,6 +64,7 @@ const WorkData = [
     contact: 'www.isobar.com/au/en/',
     details:
       'A global advertising agency where I was hired as a contractor to help build Vue components for the ‘Build & Price’ feature of holden.com.au. Agile development process’ with daily stand-ups, and 3 week sprints.',
+    extraLogoClass: null,
     projects: [
       {
         id: 1,
@@ -82,32 +84,33 @@ const WorkData = [
     contact: 'mylocal.group',
     details:
       'As a start-up in the broker industry I helped build & design responsive Umbraco CMS, AngularJS + Angular sites & landing pages. I Integrated Angular Material Design, Bootstrap and Materialize UI components. I also built responsive EDMs that were delivered using Campaign Monitor & Mail Chimp. MLG implemented agile development process’ with daily stand-ups.',
+    extraLogoClass: 'mlb',
     projects: [
-      {
-        id: 1,
-        title: 'My Local Broker',
-        url: 'mylocalbroker.com.au',
-      },
-      {
-        id: 2,
-        title: 'Chief',
-        url: 'chief.net.au',
-      },
-      {
-        id: 3,
-        title: 'Chief - Knowledge Base',
-        url: 'kb.chief.net.au',
-      },
-      {
-        id: 4,
-        title: 'My Local Aggregation',
-        url: 'mylocalaggregation.com.au',
-      },
-      {
-        id: 5,
-        title: 'Footy Home Loans',
-        url: 'footyhomeloans.com.au',
-      },
+    {
+      id: 1,
+      title: 'My Local Broker',
+      url: 'mylocalbroker.com.au',
+    },
+    {
+      id: 2,
+      title: 'Chief',
+      url: 'chief.net.au',
+    },
+    {
+      id: 3,
+      title: 'Chief - Knowledge Base',
+      url: 'kb.chief.net.au',
+    },
+    {
+      id: 4,
+      title: 'My Local Aggregation',
+      url: 'mylocalaggregation.com.au',
+    },
+    {
+      id: 5,
+      title: 'Footy Home Loans',
+      url: 'footyhomeloans.com.au',
+    },
     ],
     logo: mlgLogo,
     logo_color: mlgLogo_color,
@@ -119,6 +122,7 @@ const WorkData = [
     when: 'July 2013 - Sep 2015',
     position: 'Front-end Developer',
     contact: 'www.ggg.com.au',
+    extraLogoClass: null,
     details:
       'As a fast paced digital agency I designed and developed responsive sites, landing pages & EDM’s and daily web banners for retail giant Target. I converted existing static sites to be responsive using Bootstrap, JavaScript, jQuery & Green Sock animation library. I created wire-frames, site-maps & style guides for new projects and designed client branding.',
     projects: [

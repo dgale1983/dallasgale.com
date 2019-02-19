@@ -15,7 +15,7 @@ const Work = props => {
         <div className="work__content">
           {/* Map over Data to render each <Item /> */}
           {data.map(d => (
-            <Item key={d.id} data={d} theme={theme} />
+            <Item key={d.id} data={d} extraLogoClass={d.extraLogoClass} theme={theme} />
           ))}
         </div>
       </div>
