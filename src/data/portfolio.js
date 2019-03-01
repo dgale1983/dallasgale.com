@@ -3,7 +3,7 @@ import hiaLogo from '../images/logos/hia-wh.png'
 import hiaLogoColor from '../images/logos/hia.png'
 import hiaHomepage from '../images/portfolio/hia/homepage.jpg'
 import hiaTalk from '../images/portfolio/hia/hiatalk-1-2.jpg'
-import hiaPortal from "../images/portfolio/hia/portal1.jpg"
+import hiaPortal from "../images/portfolio/hia/portal2.jpg"
 
 // My Local Group
 import mlgLogo from '../images/logos/mlg-words.png'
