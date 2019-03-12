@@ -1,4 +1,4 @@
-# My web development portfolio site
+# My web development portfolio site - dallasgale.com
 
 Built within the GatsbyJS framework & React. 
 **Includes**
