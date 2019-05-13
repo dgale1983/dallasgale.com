@@ -1,57 +1,66 @@
-const dotenv = require("dotenv");
+const dotenv = require('dotenv')
 
-if (process.env.ENVIRONMENT !== "production") {
-  dotenv.config();
+if (process.env.ENVIRONMENT !== 'production') {
+  dotenv.config()
 }
 
-const { spaceId, accessToken } = process.env;
-
+// const { spaceId, accessToken } = process.env
 
 module.exports = {
   siteMetadata: {
-    title: `Dallas Gale`,
-    description: `Dallas Gale's front-end development and design portfolio`,
-    author: `Dallas Gale (dallasgale@hotmail.com)`,
+    title: 'Dallas Gale',
+    description: 'Dallas Gale\'s front-end development and design portfolio',
+    author: 'Dallas Gale (dallasgale@hotmail.com)',
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-react-helmet',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `images`,
         path: `${__dirname}/src/images`,
+        name: 'images',
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
-      // Contentful API
-      resolve: `gatsby-source-contentful`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        spaceId,
-        accessToken        
+        path: `${__dirname}/src/markdown`,
+        name: 'markdown',
       },
-      resolve: `gatsby-plugin-google-analytics`,
+    },
+    // {
+    //   resolve: 'gatsby-source-contentful',
+    //   options: {
+    //     spaceId,
+    //     accessToken,
+    //   },
+    // },
+    {
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: "UA-133848673-1",
+        trackingId: 'UA-133848673-1',
         head: true,
       },
+    },
+    {
       // Web Manifest
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        name: `Dallas Gale - Front-end developer & designer`,
-        short_name: `portfolio`,
-        start_url: `/`,
-        background_color: `#151414`,
-        theme_color: `#46b57a`,
-        display: `minimal-ui`,
-        // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
+        name: 'Dallas Gale - Front-end developer & designer',
+        short_name: 'portfolio',
+        start_url: '/',
+        background_color: '#151414',
+        theme_color: '#46b57a',
+        display: 'minimal-ui',
+        // Enables 'Add to Homescreen' prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
-        display: "standalone",
-        icon: `src/images/dg-icon.png`, // This path is relative to the root of the site.
+        icon: 'src/images/dg-icon.png', // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-sass`,
+    'gatsby-transformer-remark',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
+    'gatsby-plugin-sass',
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     'gatsby-plugin-offline',
