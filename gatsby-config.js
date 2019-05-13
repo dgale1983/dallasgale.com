@@ -4,8 +4,7 @@ if (process.env.ENVIRONMENT !== 'production') {
   dotenv.config()
 }
 
-const { spaceId, accessToken } = process.env
-
+// const { spaceId, accessToken } = process.env
 
 module.exports = {
   siteMetadata: {
@@ -29,17 +28,13 @@ module.exports = {
         name: 'markdown',
       },
     },
-    'gatsby-transformer-remark',
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
-    {
-      // Contentful API
-      resolve: 'gatsby-source-contentful',
-      options: {
-        spaceId,
-        accessToken,
-      },
-    },
+    // {
+    //   resolve: 'gatsby-source-contentful',
+    //   options: {
+    //     spaceId,
+    //     accessToken,
+    //   },
+    // },
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
@@ -62,6 +57,9 @@ module.exports = {
         icon: 'src/images/dg-icon.png', // This path is relative to the root of the site.
       },
     },
+    'gatsby-transformer-remark',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     'gatsby-plugin-sass',
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
