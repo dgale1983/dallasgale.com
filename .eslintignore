@@ -1,0 +1,24 @@
+# Include some rc files
+!.eslintrc.js
+!.stylelintrc.components.js
+!.stylelintrc.js
+
+# Include the .storybook js files
+!.storybook
+
+# Ignore build remanants
+/dist
+
+# Ignore npm
+/node_modules
+
+# Ignore Code Coverage Output
+/reports
+
+# Ignore tmp directory
+/tmp
+
+# Ignore Test Output
+/jest_0
+
+/docs
