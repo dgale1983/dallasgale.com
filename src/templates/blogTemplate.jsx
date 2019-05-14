@@ -1,20 +1,21 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import BlogLayout from '../components/blog_layout'
 
 export default function Template({
   data,
 }) {
   const { markdownRemark } = data
-  const { frontMatter, html } = markdownRemark
+  const { frontmatter, html } = markdownRemark
   return (
-    <div>
-      <h1>{frontMatter.title}</h1>
-      <h2>{frontMatter.date}</h2>
+    <BlogLayout>
+      <h1>{frontmatter.title}</h1>
+      <h2>{frontmatter.date}</h2>
       <div dangerouslySetInnerHTML={{
-        __html: html
-      }}>
-      </div>
-    </div>
+        __html: html,
+      }}
+      />
+    </BlogLayout>
   )
 }
 

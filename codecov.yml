@@ -1,26 +1,29 @@
+# Renamed to codecov.yml
+# See: https://github.com/codecov/support/issues/431
 codecov:
   notify:
     require_ci_to_pass: yes
 
 coverage:
-  precision: 2
-  round: down
-  range: "90...95"
-
+  precision: 1
+  range: 85...100
   status:
-    project: yes
-    patch: yes
-    changes: no
-
-parsers:
-  gcov:
-    branch_detection:
-      conditional: yes
-      loop: yes
-      method: no
-      macro: no
+    project:
+      default:
+        threshold: 1.0
+    patch:
+      default:
+        target: 95%
 
 comment:
-  layout: "header, diff"
-  behavior: default
-  require_changes: no
+  layout: "reach, diff, flags"
+  require_changes: true
+
+ignore:
+  - "src/components/router/root_router.jsx"
+  - "src/components/test_support"
+  - "src/components/prop_types"
+  - "src/jest"
+  - "__.+"
+  - ".*\\.test\\.support\\.(js|jsx)"
+  - ".*\\.stories\\.(js|jsx)"
