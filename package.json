@@ -10,6 +10,7 @@
     "@pattern-lab/starterkit-mustache-demo": "^5.0.0",
     "@sentry/browser": "^5.2.0",
     "bootstrap": "^4.2.1",
+    "codecov": "^3.4.0",
     "dotenv": "^6.2.0",
     "enzyme": "^3.9",
     "enzyme-adapter-react-16": "^1.12",
