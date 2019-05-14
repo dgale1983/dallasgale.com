@@ -7,9 +7,10 @@ import './layout.scss'
 
 
 const Layout = ({ children, theme }) => (
+  // eslint-disable-next-line react/jsx-filename-extension
   <StaticQuery
     query={graphql`
-      query SiteTitleQuery {
+    query SiteTitleQuery {
         site {
           siteMetadata {
             title
@@ -17,16 +18,21 @@ const Layout = ({ children, theme }) => (
         }
       }
     `}
-    render={data => (
-      <>
-        <div className={theme}>{children}</div>
-      </>
+    render={() => (
+      <div className={theme}>
+        {children}
+      </div>
     )}
   />
 )
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  theme: PropTypes.string,
+}
+
+Layout.defaultProps = {
+  theme: 'night',
 }
 
 export default Layout

@@ -24,17 +24,10 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/src/markdown`,
-        name: 'markdown',
+        path: `${__dirname}/src/markdown/blog/2019`,
+        name: 'markdown-pages',
       },
     },
-    // {
-    //   resolve: 'gatsby-source-contentful',
-    //   options: {
-    //     spaceId,
-    //     accessToken,
-    //   },
-    // },
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {

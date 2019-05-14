@@ -8,18 +8,18 @@ import * as Sentry from '@sentry/browser';
 // ideally before even rendering your react app
 
 // * COMPONENTS
-import BuiltWith from '../containers/builtwith.container'
+// import BuiltWith from '../containers/builtwith.container'
 import Contact from '../containers/contact.container'
 import Hero from '../containers/hero.container'
 import Logo from '../components/logo/logo.component'
 import Layout from '../components/layout'
-import Nav from '../components/nav/nav.component'
-import Portfolio from '../containers/portfolio.container'
-import Skills from '../containers/skills.container'
+// import Nav from '../components/nav/nav.component'
+// import Portfolio from '../containers/portfolio.container'
+// import Skills from '../containers/skills.container'
 import SEO from '../components/seo'
-import Training from '../containers/training.container'
+// import Training from '../containers/training.container'
 import ToggleTheme from '../components/buttons/toggleTheme.component'
-import Work from '../containers/work.container'
+// import Work from '../containers/work.container'
 
 //* CSS 
 // TODO: Convert to styled-components
