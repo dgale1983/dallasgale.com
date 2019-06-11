@@ -112,8 +112,8 @@ class IndexPage extends React.Component {
 
         <div id={'top'} />
         <Hero>
-          <span className="typography__weight--bold">
-            Hi there, my site in the process of a face lift and will be back online when it's done!
+          <span className="typography__weight--thin">
+          hibernating
           </span>
         </Hero>
 
