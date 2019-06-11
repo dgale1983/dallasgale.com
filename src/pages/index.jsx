@@ -113,7 +113,7 @@ class IndexPage extends React.Component {
         <div id={'top'} />
         <Hero>
           <span className="typography__weight--bold">
-            Be back soon!
+            Be back soon !
           </span>
         </Hero>
 
